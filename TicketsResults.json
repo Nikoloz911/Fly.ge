@@ -1,0 +1,51 @@
+[
+{
+"RouteNo": "R154-20250111",
+"Airline": "Turkish Airlines",
+"From": "DUBAI",
+"To": "LONDON",
+"Transfer City": "Istanbul",
+"Departure": "11.01.2025 8:00:00 AM",
+"Arrival": "11.01.2025 1:00:00 PM",
+"TransferRouteNo": "R151-20250111",
+"Transfer Departure": "11.01.2025 7:30:00 PM",
+"Transfer Arrival": "11.01.2025 10:30:00 PM",
+"Transfer Duration": "06:30:00",
+"Total Duration": "14:30:00",
+"Economy Price": "1950.00",
+"Business Price": "4700.00"
+},
+{
+"RouteNo": "R154-20250111",
+"Airline": "Turkish Airlines",
+"From": "DUBAI",
+"To": "LONDON",
+"Transfer City": "Istanbul",
+"Departure": "11.01.2025 8:00:00 AM",
+"Arrival": "11.01.2025 1:00:00 PM",
+"TransferRouteNo": "R166-20250112",
+"Transfer Departure": "12.01.2025 7:30:00 PM",
+"Transfer Arrival": "12.01.2025 10:30:00 PM",
+"Transfer Duration": "1.06:30:00",
+"Total Duration": "1.14:30:00",
+"Economy Price": "1950.00",
+"Business Price": "4700.00"
+},
+{
+"RouteNo": "R154-20250111",
+"Airline": "Turkish Airlines",
+"From": "DUBAI",
+"To": "LONDON",
+"Transfer City": "Istanbul",
+"Departure": "11.01.2025 8:00:00 AM",
+"Arrival": "11.01.2025 1:00:00 PM",
+"TransferRouteNo": "R181-20250113",
+"Transfer Departure": "13.01.2025 7:30:00 PM",
+"Transfer Arrival": "13.01.2025 10:30:00 PM",
+"Transfer Duration": "2.06:30:00",
+"Total Duration": "2.14:30:00",
+"Economy Price": "1950.00",
+"Business Price": "4700.00"
+}
+
+]

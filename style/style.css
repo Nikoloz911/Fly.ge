@@ -350,5 +350,743 @@ body {
 .home-page {
   background-color: #ddd;
   width: 100%;
+  height: 3300px;
+}
+.home-page .home-page-ticket-section {
   height: 500px;
+}
+.home-page .home-page-ticket-section .home-page-ticket-section-main-image {
+  width: 100%;
+  height: 100%;
+}
+.home-page .home-page-ticket-section .home-page-ticket-section-title {
+  color: #fff;
+  position: absolute;
+  left: 270px;
+  top: 95px;
+}
+.home-page .home-page-ticket-section .ticket-searcher-title-container {
+  position: absolute;
+  left: 270px;
+  top: 200px;
+  border: solid 1px #fff;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 210px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.home-page .home-page-ticket-section .ticket-searcher-title-container .plane-container {
+  background-color: rgb(0, 98, 255);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.home-page .home-page-ticket-section .ticket-searcher-title-container .plane-container .plane-image {
+  color: white;
+}
+.home-page .home-page-ticket-section .ticket-searcher-title-container .ticket-searcher-title-container-title {
+  color: #000;
+  font-size: 15px;
+}
+.home-page .home-page-ticket-section .ticket-search-container {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 1100px;
+  height: 210px;
+  top: 270px;
+  left: 270px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container {
+  width: 1000px;
+  margin-top: 5px;
+  height: 45px;
+  display: flex;
+  gap: 15px;
+  margin-left: 50px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: 500ms;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box .ticket-dropdowns-container-1-box-repeat-icon {
+  color: rgb(0, 98, 255);
+  font-size: 22px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box .ticket-dropdowns-container-1-box-text {
+  font-size: 15px;
+  color: rgb(57, 57, 57);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box .ticket-dropdowns-container-1-box-caret-icon {
+  font-size: 11px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box .ticket-dropdowns-container-1-box-caret-icon i {
+  transition: transform 0.3s ease;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box.dropdown-open .ticket-dropdowns-container-1-box-text {
+  color: rgb(0, 98, 255);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box.dropdown-open .ticket-dropdowns-container-1-box-caret-icon i {
+  color: rgb(0, 98, 255);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box .dropdown-hidden {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 210px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75);
+  display: none;
+  height: auto;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box .dropdown-visible {
+  display: block;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box .dropdown-content {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  transition: 500ms;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box .dropdown-content .dropdown-content-icon-1 {
+  color: #000;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box .dropdown-content .dropdown-content-text {
+  margin-left: 20px;
+  font-size: 14px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box .dropdown-content:hover {
+  background-color: #ddd;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box:hover {
+  background-color: #e5e5e5;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  transition: 500ms;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .ticket-dropdowns-container-1-box-repeat-icon {
+  color: rgb(0, 98, 255);
+  font-size: 22px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .ticket-dropdowns-container-1-box-text {
+  font-size: 15px;
+  color: rgb(57, 57, 57);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .ticket-dropdowns-container-1-box-caret-icon {
+  font-size: 11px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .ticket-dropdowns-container-1-box-caret-icon i {
+  transition: transform 0.3s ease;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box.dropdown-open .ticket-dropdowns-container-1-box-text {
+  color: rgb(0, 98, 255);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box.dropdown-open .ticket-dropdowns-container-1-box-caret-icon i {
+  color: rgb(0, 98, 255);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-hidden {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 330px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75);
+  display: none;
+  height: 300px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-visible {
+  display: block;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section {
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container {
+  display: flex;
+  height: 70px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-title-side {
+  margin-left: 20px;
+  width: 45%;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-icon-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-icon-container .dropdown-people-section-1-container-title-side-icon {
+  color: #000;
+  font-size: 19px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-description-container {
+  width: 80%;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-description-container .dropdown-people-section-1-container-title-side-description-container-text-1 {
+  font-size: 16px;
+  color: rgb(54, 54, 54);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-description-container .dropdown-people-section-1-container-title-side-description-container-text-2 {
+  font-size: 12px;
+  color: rgba(54, 54, 54, 0.836);
+  transform: translateY(-10px);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-buttons-side {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-buttons-side .number-option-cube {
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms background-color;
+  transition: 500ms;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-buttons-side .number-option-cube .number-reduce-option-cube-icon {
+  color: #000;
+  font-size: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-buttons-side .number-option-cube:hover {
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-buttons-side .number-option-cube.clicked {
+  background-color: #ddd;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-buttons-side .number-option-cube-2 {
+  cursor: pointer;
+  background-color: #fff;
+  border: solid 1px rgba(128, 128, 128, 0.5);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-buttons-side .number-option-cube-2 .number-reduce-option-cube-icon {
+  color: #000;
+  font-size: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-buttons-side .number-option-cube-3 {
+  cursor: pointer;
+  background-color: rgb(0, 98, 255);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-buttons-side .number-option-cube-3 .number-reduce-option-cube-icon {
+  color: #fff;
+  font-size: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-buttons-side .number-option-cube-3:hover {
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-buttons-side .number-option-cube-3.clicked {
+  background-color: rgb(78, 146, 255);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container {
+  display: flex;
+  height: 70px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-title-side {
+  margin-left: 20px;
+  width: 45%;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-icon-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-icon-container .dropdown-people-section-1-container-title-side-icon .baby-icon-image {
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-icon-container .dropdown-people-section-1-container-title-side-icon .image-line {
+  background-color: #fff;
+  top: 140px;
+  position: absolute;
+  width: 60px;
+  height: 5px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-description-container {
+  width: 80%;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-description-container .dropdown-people-section-1-container-title-side-description-container-text-1 {
+  font-size: 16px;
+  color: rgb(54, 54, 54);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-description-container .dropdown-people-section-1-container-title-side-description-container-text-2 {
+  font-size: 12px;
+  color: rgba(54, 54, 54, 0.836);
+  transform: translateY(-10px);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-buttons-side {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-buttons-side .number-option-cube {
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms background-color;
+  transition: 500ms;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-buttons-side .number-option-cube .number-reduce-option-cube-icon {
+  color: #000;
+  font-size: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-buttons-side .number-option-cube:hover {
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-buttons-side .number-option-cube.clicked {
+  background-color: #ddd;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-buttons-side .number-option-cube-2 {
+  cursor: pointer;
+  background-color: #fff;
+  border: solid 1px rgba(128, 128, 128, 0.5);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-buttons-side .number-option-cube-2 .number-reduce-option-cube-icon {
+  color: #000;
+  font-size: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-buttons-side .number-option-cube-3 {
+  cursor: pointer;
+  background-color: rgb(0, 98, 255);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-buttons-side .number-option-cube-3 .number-reduce-option-cube-icon {
+  color: #a5a5a5;
+  color: #fff;
+  font-size: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-buttons-side .number-option-cube-3:hover {
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-buttons-side .number-option-cube-3.clicked {
+  background-color: rgb(78, 146, 255);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container {
+  height: 70px;
+  display: flex;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-title-side {
+  margin-left: 20px;
+  width: 45%;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-icon-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-icon-container .dropdown-people-section-1-container-title-side-icon .baby-icon-image {
+  width: 30px;
+  height: 2%;
+  border: none;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-description-container {
+  width: 80%;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-description-container .dropdown-people-section-1-container-title-side-description-container-text-1 {
+  font-size: 16px;
+  color: rgb(54, 54, 54);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-description-container .dropdown-people-section-1-container-title-side-description-container-text-2 {
+  font-size: 12px;
+  color: rgba(54, 54, 54, 0.836);
+  transform: translateY(-10px);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-buttons-side {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-buttons-side .number-option-cube {
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms background-color;
+  transition: 500ms;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-buttons-side .number-option-cube .number-reduce-option-cube-icon {
+  color: #000;
+  font-size: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-buttons-side .number-option-cube:hover {
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-buttons-side .number-option-cube.clicked {
+  background-color: #ddd;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-buttons-side .number-option-cube-2 {
+  cursor: pointer;
+  background-color: #fff;
+  border: solid 1px rgba(128, 128, 128, 0.5);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-buttons-side .number-option-cube-2 .number-reduce-option-cube-icon {
+  color: #000;
+  font-size: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-buttons-side .number-option-cube-3 {
+  cursor: pointer;
+  background-color: rgb(0, 98, 255);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-buttons-side .number-option-cube-3 .number-reduce-option-cube-icon {
+  color: #fff;
+  font-size: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-buttons-side .number-option-cube-3:hover {
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-buttons-side .number-option-cube-3.clicked {
+  background-color: rgb(78, 146, 255);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-buttons-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 50px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-buttons-section .dropdown-delete-button {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  width: 140px;
+  height: 45px;
+  transition: 500ms;
+  border-radius: 5px;
+  font-size: 16px;
+  border: solid 1px rgb(233, 233, 233);
+  z-index: 9000;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-buttons-section .dropdown-delete-button:hover {
+  background-color: #ddd;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-buttons-section .dropdown-confirmed-button {
+  z-index: 9000;
+  border: solid 1px rgb(0, 98, 255);
+  background-color: rgb(0, 98, 255);
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+  width: 140px;
+  height: 45px;
+  font-size: 16px;
+  transition: 500ms;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-buttons-section .dropdown-confirmed-button:hover {
+  background-color: rgb(26, 114, 255);
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.75);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box:hover {
+  background-color: #e5e5e5;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box {
+  border: solid 2px red;
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: 500ms;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .ticket-dropdowns-container-1-box-text {
+  font-size: 15px;
+  color: rgb(57, 57, 57);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .ticket-dropdowns-container-1-box-caret-icon {
+  font-size: 11px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .ticket-dropdowns-container-1-box-caret-icon i {
+  transition: transform 0.3s ease;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box.dropdown-open .ticket-dropdowns-container-1-box-text {
+  color: rgb(0, 98, 255);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box.dropdown-open .ticket-dropdowns-container-1-box-caret-icon i {
+  color: rgb(0, 98, 255);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown-hidden {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 350px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75);
+  display: none;
+  height: 350px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown-visible {
+  display: block;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content {
+  border: solid 1px red;
+  height: 90%;
+  margin-top: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content .dropdown3-content-checkboxes-container {
+  display: flex;
+  flex-direction: column;
+  height: 75%;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content .dropdown3-content-checkboxes-container .checkbox-container {
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  gap: 10px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content .dropdown3-content-checkboxes-container .checkbox-container .checkbox {
+  display: none;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content .dropdown3-content-checkboxes-container .checkbox-container .checkbox-round {
+  position: relative;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  transition: 0.3s ease;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content .dropdown3-content-checkboxes-container .checkbox-container .checkbox-round::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: white;
+  transition: 0.3s ease;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content .dropdown3-content-checkboxes-container .checkbox-container .checkbox:checked + .checkbox-round {
+  border-color: blue;
+  background-color: white;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content .dropdown3-content-checkboxes-container .checkbox-container .checkbox:checked + .checkbox-round::after {
+  background-color: blue;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content .dropdown3-content-checkboxes-container .checkbox-container .checkbox-label-text {
+  margin: 0;
+  font-size: 16px;
+  color: black;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  margin-left: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content .dropdown3-content-checkboxes-container .checkbox-container:hover .checkbox-round {
+  border-color: lightblue;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container {
+  width: 1000px;
+  border: solid 2px red;
+  height: 75px;
+  display: flex;
+  margin-left: 50px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .search-button-container {
+  margin-left: 78%;
+  width: 200px;
+  display: flex;
+  justify-content: end;
+}
+.home-page .home-page-ticket-section .ticket-search-container .search-button-container .search-button {
+  width: 180px;
+  border: solid 1px rgb(0, 98, 255);
+  background-color: rgb(0, 98, 255);
+  border-radius: 5px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.home-page .home-page-ticket-section .ticket-search-container .search-button-container .search-button .search-button-icon {
+  color: #fff;
+  font-size: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .search-button-container .search-button .search-button-text {
+  color: #fff;
+  font-size: 16px;
+}
+.home-page .home-page-suggestion-ticket-section {
+  height: 1000px;
+  border: solid 3px blue;
+}
+.home-page .home-page-partners-section {
+  height: 300px;
+  border: solid 5px green;
+}
+.home-page .home-page-european-ticket-section {
+  height: 800px;
+  border: solid 5px orange;
+}
+.home-page .home-page-description-section {
+  height: 600px;
+  border: solid 5px purple;
+}
+
+.footer {
+  height: 500px;
+  background-color: #000;
 }/*# sourceMappingURL=style.css.map */

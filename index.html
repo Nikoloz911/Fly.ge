@@ -10,7 +10,9 @@
 <body>
     <nav class="nav-bar">
         <div class="nav-bar-left-side">
+            <a href="./index.html">
             <img class="nav-bar-image" src="./images/fly-logo.svg" alt="Fly Logo Image">
+        </a>
         </div>
         <div class="nav-bar-right-side">
             <div class="nav-bar-links-container">
@@ -95,8 +97,241 @@
 
     <!-- MODAL MODAL MODAL MODAL MODAL MODAL -->  <!-- MODAL MODAL MODAL MODAL MODAL MODAL -->  <!-- MODAL MODAL MODAL MODAL MODAL MODAL -->
     <main class="home-page">
+        <section class="home-page-ticket-section">
+            <img class="home-page-ticket-section-main-image" src="./images/fly-cover.svg" alt="">
+            <h1 class="home-page-ticket-section-title">წინ კიდევ ბევრი აღმოჩენაა</h1>
+            <div class="ticket-searcher-title-container">
+                <div class="plane-container">
+                    <img class="plane-image" src="./images/plane.svg" alt="">
+                </div>
+                <h2 class="ticket-searcher-title-container-title">ავიაბილეთები</h2>
+            </div>
+            <div class="ticket-search-container">
+                <div class="ticket-dropdowns-container">
+                    <div class="ticket-dropdowns-container-1-box" id="box1" onclick="toggleDropdown('dropdown1', this)">
+                        <div class="ticket-dropdowns-container-1-box-repeat-icon">
+                            <i class="bi bi-arrow-repeat"></i>
+                        </div>
+                        <p class="ticket-dropdowns-container-1-box-text">ორივე გზა</p>
+                        <div class="ticket-dropdowns-container-1-box-caret-icon">
+                            <i class="bi bi-caret-down-fill"></i>
+                        </div>
+                        <!-- Dropdown content 1 -->  <!-- Dropdown content 1 -->  <!-- Dropdown content 1 -->
+                        <div id="dropdown1" class="dropdown-hidden">
+                            <div class="dropdown-content" onclick="selectOption(this)">
+                                <div class="dropdown-content-icon-1">
+                                    <i class="bi bi-arrow-repeat"></i>
+                                </div>
+                                <p class="dropdown-content-text">ორივე გზა</p>
+                            </div>
+                            <div class="dropdown-content" onclick="selectOption(this)">
+                                <div class="dropdown-content-icon-1">
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                                <p class="dropdown-content-text">ცალმხრივი</p>
+                            </div>
+                            <div class="dropdown-content" onclick="selectOption(this)">
+                                <div class="dropdown-content-icon-1">
+                                    <i class="bi bi-arrow-left-right"></i>
+                                </div>
+                                <p class="dropdown-content-text">რამდენიმე მარშუტი</p>
+                            </div>
+                        </div>
+                       <!-- Dropdown content 1 -->  <!-- Dropdown content 1 -->  <!-- Dropdown content 1 -->
+                    </div>          
+                    
+                    <div class="ticket-dropdowns-container-2-box" id="box2" onclick="toggleDropdown('dropdown2', this)">
+                        <div class="ticket-dropdowns-container-1-box-repeat-icon">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <p class="ticket-dropdowns-container-1-box-text">მგზავრი</p>
+                        <div class="ticket-dropdowns-container-1-box-caret-icon">
+                            <i class="bi bi-caret-down-fill"></i>
+                        </div>
+                        <!-- Dropdown content 2 -->   <!-- Dropdown content 2 -->   <!-- Dropdown content 2 -->
+                        <div id="dropdown2" class="dropdown-hidden">
+                           <div class="dropdown-people-section">
+                            <!-- PEOPLE DROPDOWN 1 -->    <!-- PEOPLE DROPDOWN 1 -->   <!-- PEOPLE DROPDOWN 1 -->   <!-- PEOPLE DROPDOWN 1 -->
+                            <div class="dropdown-people-section-1-container">
+                                <div class="dropdown-people-section-1-container-title-side">
+                                    <div class="dropdown-people-section-1-container-title-side-icon-container">
+                                        <div class="dropdown-people-section-1-container-title-side-icon">
+                                            <i class="bi bi-person-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-people-section-1-container-title-side-description-container">
+                                        <p class="dropdown-people-section-1-container-title-side-description-container-text-1">ზრდასრული</p>
+                                        <p class="dropdown-people-section-1-container-title-side-description-container-text-2">11 წლიდან</p>
+                                    </div>
+                                </div>
+                                <div class="dropdown-people-section-1-container-buttons-side">
+                                    <div id="reduce-cube" class="number-option-cube">
+                                        <div class="number-reduce-option-cube-icon">
+                                            <i class="bi bi-dash"></i>
+                                        </div>
+                                    </div>                              
+                                    <div id="counter-cube" class="number-option-cube-2">
+                                        <div class="number-reduce-option-cube-icon">
+                                            <p id="counter">1</p> 
+                                        </div>
+                                    </div>
+                                
+                                    <div id="increase-cube" class="number-option-cube-3">
+                                        <div class="number-reduce-option-cube-icon">
+                                            <i class="bi bi-plus-lg"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- PEOPLE DROPDOWN 1 -->    <!-- PEOPLE DROPDOWN 1 -->   <!-- PEOPLE DROPDOWN 1 -->   <!-- PEOPLE DROPDOWN 1 -->
+                            <!-- PEOPLE DROPDOWN 2 -->    <!-- PEOPLE DROPDOWN 2 -->    <!-- PEOPLE DROPDOWN 2 -->    <!-- PEOPLE DROPDOWN 2 -->
+                            <div class="dropdown-people-section-2-container">
+                                
+                                <div class="dropdown-people-section-1-container-title-side">
+                                    <div class="dropdown-people-section-1-container-title-side-icon-container">
+                                        <div class="dropdown-people-section-1-container-title-side-icon">
+                                           <img class="baby-icon-image" src="./images/baby.png" alt="">
+                                           <div class="image-line"></div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-people-section-1-container-title-side-description-container">
+                                        <p class="dropdown-people-section-1-container-title-side-description-container-text-1">ბავშვები</p>
+                                        <p class="dropdown-people-section-1-container-title-side-description-container-text-2">2-11 წლის</p>
+                                    </div>
+                                </div>
+                                <div class="dropdown-people-section-1-container-buttons-side">
+                                    <div id="reduce-cube-2" class="number-option-cube">
+                                        <div class="number-reduce-option-cube-icon">
+                                            <i class="bi bi-dash"></i>
+                                        </div>
+                                    </div>                              
+                                    <div id="counter-cube-2" class="number-option-cube-2">
+                                        <div class="number-reduce-option-cube-icon">
+                                            <p id="counter-2">1</p> 
+                                        </div>
+                                    </div>
+                                    <div id="increase-cube-2" class="number-option-cube-3">
+                                        <div class="number-reduce-option-cube-icon">
+                                            <i class="bi bi-plus-lg"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!-- PEOPLE DROPDOWN 2 -->    <!-- PEOPLE DROPDOWN 2 -->    <!-- PEOPLE DROPDOWN 2 -->    <!-- PEOPLE DROPDOWN 2 -->
+                            <!-- PEOPLE DROPDOWN 3 -->     <!-- PEOPLE DROPDOWN 3 -->     <!-- PEOPLE DROPDOWN 3 -->     <!-- PEOPLE DROPDOWN 3 -->
+                            <div class="dropdown-people-section-3-container">
+                                <div class="dropdown-people-section-1-container-title-side">
+                                    <div class="dropdown-people-section-1-container-title-side-icon-container">
+                                        <div class="dropdown-people-section-1-container-title-side-icon">
+                                           <img class="baby-icon-image" src="./images/child.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-people-section-1-container-title-side-description-container">
+                                        <p class="dropdown-people-section-1-container-title-side-description-container-text-1">ჩვილი</p>
+                                        <p class="dropdown-people-section-1-container-title-side-description-container-text-2">2 წლამდე</p>
+                                    </div>
+                                </div>
+                                <div class="dropdown-people-section-1-container-buttons-side">             
+                                    <div id="reduce-cube-4" class="number-option-cube">
+                                        <div class="number-reduce-option-cube-icon">
+                                            <i class="bi bi-dash"></i>
+                                        </div>
+                                    </div>                                                  
+                                    <div id="counter-cube-4" class="number-option-cube-2">
+                                        <div class="number-reduce-option-cube-icon">
+                                            <p id="counter-4">1</p> 
+                                        </div>
+                                    </div>       
+                                    <div id="increase-cube-4" class="number-option-cube-3">
+                                        <div class="number-reduce-option-cube-icon">
+                                            <i class="bi bi-plus-lg"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>         
+                            <!-- PEOPLE DROPDOWN 3 -->     <!-- PEOPLE DROPDOWN 3 -->     <!-- PEOPLE DROPDOWN 3 -->     <!-- PEOPLE DROPDOWN 3 -->
+                           </div>
+                           <div class="dropdown-buttons-section">
+                            <button id="delete-button-1" class="dropdown-delete-button">წაშლა</button>
+                            <button id="confirm-button-1" class="dropdown-confirmed-button">დასტური</button>                        
+                           </div>
+                        </div>
+                 <!-- Dropdown content 2 -->   <!-- Dropdown content 2 -->   <!-- Dropdown content 2 -->
+                    </div>
+                    <div class="ticket-dropdowns-container-3-box" id="box3" onclick="toggleDropdown('dropdown3', this)">
+                        <p class="ticket-dropdowns-container-1-box-text">ეკონომ კლასი</p>
+                        <div class="ticket-dropdowns-container-1-box-caret-icon">
+                            <i class="bi bi-caret-down-fill"></i>
+                        </div>
+                        <!-- Dropdown content  3 -->  <!-- Dropdown content  3 -->  <!-- Dropdown content  3 -->
+                        <div id="dropdown3" class="dropdown-hidden">
+                            <div class="dropdown3-content">
+                                <div class="dropdown3-content-checkboxes-container">
+                                    <div class="dropdown3-content-checkboxes-container-1">
+                                        <label class="checkbox-container">
+                                            <input type="checkbox" class="checkbox" id="checkbox-1" checked="checked" />
+                                            <span class="checkbox-round"></span>
+                                            <p class="checkbox-label-text">ეკონომ კლასი</p>
+                                        </label>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox" class="checkbox" id="checkbox-2" />
+                                            <span class="checkbox-round"></span>
+                                            <p class="checkbox-label-text">პერმიუმ ეკონომი</p>
+                                        </label>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox" class="checkbox" id="checkbox-3" />
+                                            <span class="checkbox-round"></span>
+                                            <p class="checkbox-label-text">ბიზნეს კლასი</p>
+                                        </label>
+                                        <label class="checkbox-container">
+                                            <input type="checkbox" class="checkbox" id="checkbox-4" />
+                                            <span class="checkbox-round"></span>
+                                            <p class="checkbox-label-text">პირველი კლასი</p>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                              <!-- Dropdown content  3 -->  <!-- Dropdown content  3 -->  <!-- Dropdown content  3 -->
+                    </div>
+                    
+                </div>
+                <div class="ticket-city-and-date-dropdowns-container">
 
+                </div>
+                <div class="search-button-container">
+                    <button class="search-button">
+                        <div class="search-button-icon"><i class="bi bi-search"></i></div>
+                        <p class="search-button-text">ბილეთის ძებნა</p>
+                    </button>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </section>
+        <section class="home-page-suggestion-ticket-section">
+            <!-- <p>tickets</p>
+            <div id="ticket-list"></div> -->
+        </section>
+        <section class="home-page-partners-section">
+
+        </section>
+        <section class="home-page-european-ticket-section">
+
+        </section>
+        <section class="home-page-description-section">
+
+        </section>
     </main>
+    <footer class="footer">
+
+    </footer>
     <script src="./script/app.js"></script>
 </body>
 </html>
