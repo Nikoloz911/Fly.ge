@@ -122,6 +122,7 @@ body {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  z-index: 999999;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 .modal-content .modal-header-container {
@@ -941,7 +942,7 @@ body {
   position: relative;
   cursor: pointer;
   transition: 500ms;
-  z-index: 9999;
+  z-index: 99;
 }
 .home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .ticket-dropdowns-container-1-box-text {
   font-size: 15px;

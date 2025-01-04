@@ -129,6 +129,7 @@ body{
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    z-index: 999999;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     .modal-header-container{
         display: flex;
@@ -970,7 +971,7 @@ body{
     position: relative; 
     cursor: pointer;
     transition: 500ms;
-    z-index: 9999;
+    z-index: 99;
     .ticket-dropdowns-container-1-box-text {
         font-size: 15px;
         color: rgb(57, 57, 57);
@@ -1388,21 +1389,15 @@ body{
     }
     .home-page-partners-section{
         height: 300px;
-    border: solid 5px green;
-
-
+        border: solid 5px green;
     }
     .home-page-european-ticket-section{
         height: 800px;
-    border: solid 5px orange;
-
-
+        border: solid 5px orange;
     }
     .home-page-description-section{
         height: 600px;
     border: solid 5px purple;
-
-
     }
 }
 .footer{
