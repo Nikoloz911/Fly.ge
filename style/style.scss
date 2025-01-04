@@ -428,6 +428,7 @@ body{
                     position: relative; 
                     cursor: pointer;
                     transition: 500ms;
+                    z-index: 9999;
                     .ticket-dropdowns-container-1-box-repeat-icon {
                         color: rgb(0, 98, 255);
                         font-size: 22px;
@@ -507,6 +508,8 @@ body{
                     gap: 10px;
                     position: relative; 
                     transition: 500ms;
+                    cursor: pointer;
+                    z-index: 9999;
                     .ticket-dropdowns-container-1-box-repeat-icon {
                         color: rgb(0, 98, 255);
                         font-size: 22px;
@@ -669,7 +672,6 @@ body{
                     .dropdown-people-section-2-container{
                         display: flex;
                         height: 70px;
-                      
                         .dropdown-people-section-1-container-title-side{
                             margin-left: 20px;
                             width: 45%;
@@ -959,7 +961,6 @@ body{
 /// OPTIONS DROPDOWN 3 /// OPTIONS DROPDOWN 3 /// OPTIONS DROPDOWN 3 /// OPTIONS DROPDOWN 3 /// OPTIONS DROPDOWN 3 /// OPTIONS DROPDOWN 3
 /// OPTIONS DROPDOWN 3 /// OPTIONS DROPDOWN 3 /// OPTIONS DROPDOWN 3 /// OPTIONS DROPDOWN 3 /// OPTIONS DROPDOWN 3 /// OPTIONS DROPDOWN 3
 .ticket-dropdowns-container-3-box {
-    border: solid 2px red;
     width: auto;
     height: 100%;
     display: flex;
@@ -969,6 +970,7 @@ body{
     position: relative; 
     cursor: pointer;
     transition: 500ms;
+    z-index: 9999;
     .ticket-dropdowns-container-1-box-text {
         font-size: 15px;
         color: rgb(57, 57, 57);
@@ -1005,13 +1007,12 @@ body{
         display: block;
     }
    .dropdown3-content {
-    border: solid 1px red;
     height: 90%;
     margin-top: 20px;
     .dropdown3-content-checkboxes-container {
         display: flex;
         flex-direction: column;
-        height: 75%;
+        height: 70%;
         .checkbox-container {
             height: 40px;
             position: relative;
@@ -1064,6 +1065,70 @@ body{
             }
         }
     }
+    .dropdown3-content-title{
+        font-size: 17px;
+    }
+    .dropdown3-content-bottom-container{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        .dropdown3-content-checkbox-cube{
+            background-color: transparent;
+            transition: 500ms;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s ease;
+            &:hover{
+                background-color: #ddd;
+            }
+            &.checked {
+                background-color: rgb(195, 218, 255);
+                transition: background-color 0.3s ease;
+            }
+            .dropdown3-content-checkbox{
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+                transition: 500ms;
+                transition: transform 0.3s ease, background-color 0.3s ease;
+            }
+        }    
+       
+            .dropdown3-content-checkbox-cube-change {
+                background-color: #000;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 20px;
+                position: relative; 
+                transition: 1000ms;
+                .dropdown3-content-checkbox-cube-change-box {
+                  display: none;
+                  background-color: #3e3e3e;
+                  color: #ddd;
+                  padding-left: 10px;
+                  padding-right: 10px;
+                  width: 200px;
+                  height: auto;
+                  position: absolute; 
+                  top: 25px;
+                  font-size: 12px;
+                  border-radius: 5px;
+                }   
+                &:hover .dropdown3-content-checkbox-cube-change-box {
+                  display: block;
+                }
+            }         
+      
+    }
 }
 
 }
@@ -1073,12 +1138,220 @@ body{
               /// OPTIONS DROPDOWNS  /// OPTIONS DROPDOWNS  /// OPTIONS DROPDOWNS  /// OPTIONS DROPDOWNS  /// OPTIONS DROPDOWNS  /// OPTIONS DROPDOWNS
             /// OPTIONS DROPDOWNS  /// OPTIONS DROPDOWNS  /// OPTIONS DROPDOWNS  /// OPTIONS DROPDOWNS  /// OPTIONS DROPDOWNS  /// OPTIONS DROPDOWNS
             .ticket-city-and-date-dropdowns-container{
-                width: 1000px;
-                border: solid 2px red;
+                width: 1020px;
                 height: 75px;
                 display: flex;
+                align-items: center;
                 margin-left: 50px;
-
+                .ticket-city-and-date-first-input-title{
+                    position: absolute;
+                    font-size: 15px;
+                    color: #3e3e3e;
+                    top: 40px;
+                    left: 90px;
+                }
+                .ticket-city-and-date-second-input-title{
+                    position: absolute;
+                    font-size: 15px;
+                    color: #3e3e3e;
+                    top: 40px;
+                    left: 370px;
+                }
+                .datetime-first-title{
+                    position: absolute;
+                    font-size: 15px;
+                    color: #3e3e3e;
+                    top: 40px;
+                    left: 610px;
+                }
+                .datetime-second-title{
+                    position: absolute;
+                    font-size: 15px;
+                    color: #3e3e3e;
+                    top: 40px;
+                    left: 840px;
+                }
+                .ticket-city-from-icon{
+                    position: absolute;
+                    font-size: 22px;
+                    color: #000;
+                    left: 50px;
+                    top: 75px;
+                }
+                .ticket-city-to-icon{
+                    position: absolute;
+                    font-size: 22px;
+                    left: 340px;
+                    top: 75px;
+                }
+                .between-cube{
+                    border: solid 1px grey;
+                    border-radius: 50%;
+                    width: 25px;
+                    height: 25px;
+                    transition: 500ms;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .between-inside-cube{
+                        background-color: #fff;
+                        width: 2px;
+                        height: 2px;
+                        border-radius: 50%;
+                        border: solid 1px grey;
+                    }
+                    &:hover{
+                        background-color: #ddd;
+                    }
+                }
+                .ticket-city-from-input{
+                    height: 45px;
+                    width: 210px;
+                    font-size: 20px;
+                    outline: none;
+                  border-left: none;
+                  border-right: none;
+                    border-top: 1px #000 !important;
+                    overflow: hidden;
+                    padding-left: 40px;
+                }
+                .ticket-city-to-input{
+                    height: 45px;
+                    width: 210px;
+                    font-size: 20px;
+                    outline: none;
+                  border-left: none;
+                  border-right: none;
+                    border-top: 1px #000 !important;
+                    overflow: hidden;
+                    padding-left: 40px;
+                }
+                .datetime-first-input{
+                    height: 45px;
+                    width: 210px;
+                    font-size: 20px;
+                    outline: none;
+                  border-left: none;
+                  border-right: none;
+                    border-top: 1px #000 !important;
+                    overflow: hidden;
+                    padding-left: 10px;
+                    margin-left: 20px;
+                }
+                .datetime-second-input{
+                    height: 45px;
+                    width: 210px;
+                    font-size: 20px;
+                    outline: none;
+                  border-left: none;
+                  border-right: none;
+                    border-top: 1px #000 !important;
+                    overflow: hidden;
+                    padding-left: 10px;
+                    margin-left: 10px;
+                }  
+                .ticket-city-from-dropdown{
+                    position: absolute;
+                    overflow-y: auto;
+                    display: none;
+                    top: 110px;
+                    background-color: #Fff;
+                    width: auto;
+                    max-height: 200px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    z-index: 10000;
+                    margin-top: 10px;
+                    border-radius: 5px;
+                    box-shadow: 1px 1px 11px 0px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: 1px 1px 11px 0px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 1px 1px 11px 0px rgba(0,0,0,0.75);
+                    /// SAME STYLES  ---  .ticket-city-to-dropdown-option-cube
+                    .ticket-city-from-dropdown-option-cube{
+                        padding: 10px 20px;
+                        cursor: pointer;
+                        width: 300px;
+                        overflow: hidden;
+                        display: flex;
+                        gap: 20px;
+                        justify-content: start;
+                        align-items: center;   
+                        height: 30px;
+                        transition: 500ms;
+                        .city-icon{
+                            color: #000;
+                            font-size: 20px;
+                        }
+                        &:hover{
+                            background-color: #ddd;
+                        }
+                    }
+                    /// SAME STYLES  ---  .ticket-city-to-dropdown-option-cube
+                }
+                .ticket-city-from-dropdown::-webkit-scrollbar {
+                    width: 12px; 
+                }
+                .ticket-city-from-dropdown::-webkit-scrollbar-track {
+                    background: #f1f1f1; 
+                    border-radius: 10px; 
+                }
+                .ticket-city-from-dropdown::-webkit-scrollbar-thumb {
+                    background: #007bff; 
+                    border-radius: 10px; 
+                }
+                
+             
+                .ticket-city-to-dropdown{
+                    position: absolute;
+                    top: 115px;
+                    left: 320px;
+                    display: none;
+                    overflow-y: auto;
+                     width: auto;
+                     max-height: 200px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    background-color: #fff;
+                    border-radius: 5px;
+                    box-shadow: 1px 1px 11px 0px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: 1px 1px 11px 0px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 1px 1px 11px 0px rgba(0,0,0,0.75);
+                     /// SAME STYLES  ---   .ticket-city-from-dropdown-option-cube
+                    .ticket-city-to-dropdown-option-cube{
+                        padding: 10px 20px;
+                        cursor: pointer;
+                        overflow: hidden;
+                        width: 300px;
+                        display: flex;
+                        gap: 20px;
+                        justify-content: start;
+                        align-items: center;
+                        height: 30px;
+                        transition: 500ms;
+                        margin-top: 10px;
+                        .city-icon{
+                            color: #000;
+                            font-size: 20px;
+                        }
+                        &:hover{
+                            background-color: #ddd;
+                        }
+                    }
+                     /// SAME STYLES  ---   .ticket-city-from-dropdown-option-cube
+                }
+                .ticket-city-to-dropdown::-webkit-scrollbar {
+                    width: 12px; 
+                }
+                .ticket-city-to-dropdown::-webkit-scrollbar-track {
+                    background: #f1f1f1; 
+                    border-radius: 10px; 
+                }
+                .ticket-city-to -dropdown::-webkit-scrollbar-thumb {
+                    background: #007bff; 
+                    border-radius: 10px; 
+                }
+                
             }
             .search-button-container{
                 margin-left: 78%;

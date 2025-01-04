@@ -259,61 +259,110 @@
                         </div>
                  <!-- Dropdown content 2 -->   <!-- Dropdown content 2 -->   <!-- Dropdown content 2 -->
                     </div>
-                    <div class="ticket-dropdowns-container-3-box" id="box3" onclick="toggleDropdown('dropdown3', this)">
-                        <p class="ticket-dropdowns-container-1-box-text">ეკონომ კლასი</p>
+                      <!-- Dropdown content  3 -->  <!-- Dropdown content  3 -->  <!-- Dropdown content  3 -->
+                      <div class="ticket-dropdowns-container-3-box" id="box3" onclick="toggleDropdown('dropdown3', this)">
+                        <p id="ticket-dropdowns-container-1-box-text" class="ticket-dropdowns-container-1-box-text">ეკონომ კლასი</p>
                         <div class="ticket-dropdowns-container-1-box-caret-icon">
-                            <i class="bi bi-caret-down-fill"></i>
-                        </div>
-                        <!-- Dropdown content  3 -->  <!-- Dropdown content  3 -->  <!-- Dropdown content  3 -->
+                          <i class="bi bi-caret-down-fill"></i>
+                        </div>           
                         <div id="dropdown3" class="dropdown-hidden">
-                            <div class="dropdown3-content">
-                                <div class="dropdown3-content-checkboxes-container">
-                                    <div class="dropdown3-content-checkboxes-container-1">
-                                        <label class="checkbox-container">
-                                            <input type="checkbox" class="checkbox" id="checkbox-1" checked="checked" />
-                                            <span class="checkbox-round"></span>
-                                            <p class="checkbox-label-text">ეკონომ კლასი</p>
-                                        </label>
-                                        <label class="checkbox-container">
-                                            <input type="checkbox" class="checkbox" id="checkbox-2" />
-                                            <span class="checkbox-round"></span>
-                                            <p class="checkbox-label-text">პერმიუმ ეკონომი</p>
-                                        </label>
-                                        <label class="checkbox-container">
-                                            <input type="checkbox" class="checkbox" id="checkbox-3" />
-                                            <span class="checkbox-round"></span>
-                                            <p class="checkbox-label-text">ბიზნეს კლასი</p>
-                                        </label>
-                                        <label class="checkbox-container">
-                                            <input type="checkbox" class="checkbox" id="checkbox-4" />
-                                            <span class="checkbox-round"></span>
-                                            <p class="checkbox-label-text">პირველი კლასი</p>
-                                        </label>
-                                    </div>
-                                </div>
+                          <div class="dropdown3-content">
+                            <div class="dropdown3-content-checkboxes-container">
+                              <div class="dropdown3-content-checkboxes-container-1">
+                                <label class="checkbox-container">
+                                  <input type="checkbox" class="checkbox" id="checkbox-1" checked="checked" />
+                                  <span class="checkbox-round"></span>
+                                  <p class="checkbox-label-text" id="label-checkbox-1">ეკონომ კლასი</p>
+                                </label>
+                                <label class="checkbox-container">
+                                  <input type="checkbox" class="checkbox" id="checkbox-2" />
+                                  <span class="checkbox-round"></span>
+                                  <p class="checkbox-label-text" id="label-checkbox-2">პერმიუმ ეკონომი</p>
+                                </label>
+                                <label class="checkbox-container">
+                                  <input type="checkbox" class="checkbox" id="checkbox-3" />
+                                  <span class="checkbox-round"></span>
+                                  <p class="checkbox-label-text" id="label-checkbox-3">ბიზნეს კლასი</p>
+                                </label>
+                                <label class="checkbox-container">
+                                  <input type="checkbox" class="checkbox" id="checkbox-4" />
+                                  <span class="checkbox-round"></span>
+                                  <p class="checkbox-label-text" id="label-checkbox-4">პირველი კლასი</p>
+                                </label>
+                              </div>
                             </div>
-                        </div>    
-                              <!-- Dropdown content  3 -->  <!-- Dropdown content  3 -->  <!-- Dropdown content  3 -->
+                            <h1 class="dropdown3-content-title">დაზოგე ფული, შეინარჩუნე კომფორტი</h1>
+                            <div class="dropdown3-content-bottom-container">
+                              <div id="dropdown3-content-checkbox-cube" class="dropdown3-content-checkbox-cube">
+                                <input class="dropdown3-content-checkbox" type="checkbox">
+                              </div>
+                              <p>შერეული კლასით ძებნა</p>
+                              <div id="dropdown3-content-checkbox-cube-change" class="dropdown3-content-checkbox-cube-change">
+                                <p>i</p>
+                                <div class="dropdown3-content-checkbox-cube-change-box">
+                                  <p>თუ შერეულ კლასებს აირჩევთ, ჩვენ გაჩვენებთ საუკეთესო კომბინაციებს კომფორტული, მაგრამ ხელმისაწვდომი მოგზაურობისთვის. თქვენ გექნებათ არჩეული კლასი ხანგრძლივ ფრენებზე, რომლებსაც 4 საათზე მეტი სჭირდება, ხოლო რეგულარულ Economy-ზე მოკლე ფრენებზე.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>                        
+                      </div>                      
+                       <!-- Dropdown content  3 -->  <!-- Dropdown content  3 -->  <!-- Dropdown content  3 -->
+                </div>
+                <!-- TICKET SEARCH CONTAINER -->      <!-- TICKET SEARCH CONTAINER -->      <!-- TICKET SEARCH CONTAINER -->  
+                <div class="ticket-city-and-date-dropdowns-container">
+                    <p class="ticket-city-and-date-first-input-title">ქალაქი, აეროპორტი</p>    
+                    <div class="ticket-city-from-icon"><i class="bi bi-airplane"></i></div>         
+                    <input class="ticket-city-from-input" type="text" placeholder="საიდან">
+
+                    <div class="ticket-city-from-dropdown">
+                        <div class="ticket-city-from-dropdown-option-cube">
+                            <div class="city-icon"><i class="bi bi-buildings-fill"></i></div>
+                            <h4>City Name From Json file fetch</h4>
+                        </div>
+                    
+                        <div class="ticket-city-from-dropdown-option-cube">
+                            <div class="city-icon"><i class="bi bi-airplane-fill"></i></div>
+                            <h4>AIRPORST</h4>
+                        </div>
+                    
+                    
+                    
+                        <!-- More cubes as needed -->
                     </div>
                     
-                </div>
-                <div class="ticket-city-and-date-dropdowns-container">
+                
+                    <p class="ticket-city-and-date-second-input-title">ქალაქი, აეროპორტი</p>
+                    <div class="between-cube"><div class="between-inside-cube"></div></div>
+                    <div class="ticket-city-to-icon"><i class="bi bi-airplane-fill"></i></div>         
+                    <input class="ticket-city-to-input" type="text" placeholder="სად">
+                    <div class="ticket-city-to-dropdown">
 
+
+                       <div class="ticket-city-to-dropdown-option-cube">
+                        <div class="city-icon"><i class="bi bi-buildings-fill"></i></div>
+                        <h4>City Name From Json file fetch</h4>
+                       </div>
+                       
+
+                    </div>
+                
+                    <p class="datetime-first-title">გამგზავრება</p>
+                    <p class="datetime-second-title">დაბრუნება</p>
+                    <input class="datetime-first-input" type="date">
+                    <input class="datetime-second-input" type="date">
                 </div>
+                
                 <div class="search-button-container">
-                    <button class="search-button">
+                    <button id="searchButton" class="search-button">
                         <div class="search-button-icon"><i class="bi bi-search"></i></div>
                         <p class="search-button-text">ბილეთის ძებნა</p>
                     </button>
                 </div>
+                
+                   <!-- TICKET SEARCH CONTAINER -->      <!-- TICKET SEARCH CONTAINER -->      <!-- TICKET SEARCH CONTAINER -->  
             </div>
-
-
-
-
-
-
-
+             
         </section>
         <section class="home-page-suggestion-ticket-section">
             <!-- <p>tickets</p>
