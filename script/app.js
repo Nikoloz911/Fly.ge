@@ -556,7 +556,8 @@ document.addEventListener('DOMContentLoaded', function () {
 /// DROPDOWN 3 /// DROPDOWN 3 /// DROPDOWN 3 /// DROPDOWN 3 /// DROPDOWN 3 /// DROPDOWN 3 /// DROPDOWN 3 /// DROPDOWN 3 /// DROPDOWN 3
 /// DROPDOWN 3 /// DROPDOWN 3 /// DROPDOWN 3 /// DROPDOWN 3 /// DROPDOWN 3 /// DROPDOWN 3 /// DROPDOWN 3 /// DROPDOWN 3 /// DROPDOWN 3
 
-
+/// TICKET SEARCH INPUTS /// TICKET SEARCH INPUTS /// TICKET SEARCH INPUTS /// TICKET SEARCH INPUTS /// TICKET SEARCH INPUTS /// TICKET SEARCH INPUTS
+/// TICKET SEARCH INPUTS /// TICKET SEARCH INPUTS /// TICKET SEARCH INPUTS /// TICKET SEARCH INPUTS /// TICKET SEARCH INPUTS /// TICKET SEARCH INPUTS
 let firstInput = document.querySelector('.ticket-city-from-input');
 let secondInput = document.querySelector('.ticket-city-to-input');
 let thirdInput = document.querySelector('.datetime-first-input');
@@ -603,15 +604,12 @@ firstInputField.addEventListener('click', function() {
     toggleDropdown(firstDropdown, secondDropdown);
     firstInputTitle.style.color = ' rgb(0, 98, 255)';
     secondInputTitle.style.color = '';
-
 });
-
 secondInputField.addEventListener('click', function() {
     toggleDropdown(secondDropdown, firstDropdown);
     secondInputTitle.style.color = ' rgb(0, 98, 255)';
     firstInputTitle.style.color = '';
 });
-
 document.addEventListener('click', function(event) {
     if (!firstInputField.contains(event.target) && !firstDropdown.contains(event.target)) {
         firstDropdown.style.display = 'none';
@@ -630,7 +628,6 @@ firstOptions.forEach(option => {
         firstDropdown.style.display = 'none';
     });
 });
-
 secondOptions.forEach(option => {
     option.addEventListener('click', function() {
         secondInputField.value = this.innerText;
@@ -662,47 +659,64 @@ toInput.addEventListener("click", function () {
   toggleCityDropdown(toDropdown, fromDropdown);
   secondInputTitle.style.color = ' rgb(0, 98, 255)';
 });
+/// TICKET SEARCH INPUTS /// TICKET SEARCH INPUTS /// TICKET SEARCH INPUTS /// TICKET SEARCH INPUTS /// TICKET SEARCH INPUTS /// TICKET SEARCH INPUTS
+/// TICKET SEARCH INPUTS /// TICKET SEARCH INPUTS /// TICKET SEARCH INPUTS /// TICKET SEARCH INPUTS /// TICKET SEARCH INPUTS /// TICKET SEARCH INPUTS
+
+/// FETCH DATA /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA 
+/// FETCH DATA /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA 
+fetch('AirpotsList.json')
+  .then(response => response.json())
+  .then(data => {
+    populateDropdowns(data);
+  })
+  .catch(error => console.error('Error fetching airports data:', error));
+function populateDropdowns(data) {
+  let fromDropdown = document.querySelector('.ticket-city-from-dropdown');
+  let toDropdown = document.querySelector('.ticket-city-to-dropdown');
+  let fromInputField = document.querySelector('#ticket-city-from-input');
+  let toInputField = document.querySelector('#ticket-city-to-input');
+  fromDropdown.innerHTML = '';
+  toDropdown.innerHTML = '';
+  data.forEach(airport => {
+    let fromDropdownOption = createDropdownOption(airport, 'from');
+    fromDropdown.appendChild(fromDropdownOption);
+    
+    fromDropdownOption.addEventListener('click', () => {
+      fromInputField.value = `${airport.ICAO_Code} - ${airport.Airport_Name} (${airport.City})`;
+      fromDropdown.style.display = 'none';  
+    });
+  });
+  data.forEach(airport => {
+    let toDropdownOption = createDropdownOption(airport, 'to');
+    toDropdown.appendChild(toDropdownOption);
+    
+    toDropdownOption.addEventListener('click', () => {
+      toInputField.value = `${airport.ICAO_Code} - ${airport.Airport_Name} (${airport.City})`;
+      toDropdown.style.display = 'none';  
+    });
+  });
+}
+function createDropdownOption(airport, type) {
+  let dropdownOption = document.createElement('div');
+  dropdownOption.classList.add('ticket-city-from-dropdown-option-cube', 'ticket-city-to-dropdown-option-cube');
+  let icon = document.createElement('div');
+  icon.classList.add('city-icon');
+  let iconHtml;
+  if (type === 'from') {
+    iconHtml = Math.random() < 0.5 ? '<i class="bi bi-airplane"></i>' : '<i class="bi bi-buildings"></i>';
+  } else {
+    iconHtml = Math.random() < 0.5 ? '<i class="bi bi-airplane-fill"></i>' : '<i class="bi bi-buildings-fill"></i>';
+  }
+  icon.innerHTML = iconHtml;
+  let name = document.createElement('h4');
+  name.textContent = `${airport.ICAO_Code} - ${airport.Airport_Name} (${airport.City})`;
+  dropdownOption.appendChild(icon);
+  dropdownOption.appendChild(name);
+  return dropdownOption;
+}
+/// FETCH DATA /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA 
+/// FETCH DATA /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA 
 
 
 
 
-
-
-
-
-
-
-
-
-// fetch('TicketsResults.json') 
-// .then(response => {
-//     if (!response.ok) {
-//         throw new Error('Network response was not ok');
-//     }
-//     return response.json();
-// })
-// .then(data => {
-//     let ticketList = document.getElementById('ticket-list');
-//     data.forEach(ticket => {
-//         console.log('Ticket:', ticket);
-//         let ticketDiv = document.createElement('div');
-//         ticketDiv.classList.add('ticket');
-//         ticketDiv.innerHTML = `
-//             <h3>Route No: ${ticket.RouteNo}</h3>
-//             <p><strong>Airline:</strong> ${ticket.Airline}</p>
-//             <p><strong>From:</strong> ${ticket.From}</p>
-//             <p><strong>To:</strong> ${ticket.To}</p>
-//             <p><strong>Transfer City:</strong> ${ticket['Transfer City']}</p>
-//             <p><strong>Departure:</strong> ${ticket.Departure}</p>
-//             <p><strong>Arrival:</strong> ${ticket.Arrival}</p>
-//             <p><strong>Transfer Route No:</strong> ${ticket.TransferRouteNo}</p>
-//             <p><strong>Transfer Departure:</strong> ${ticket['Transfer Departure']}</p>
-//             <p><strong>Transfer Arrival:</strong> ${ticket['Transfer Arrival']}</p>
-//             <p><strong>Transfer Duration:</strong> ${ticket['Transfer Duration']}</p>
-//             <p><strong>Total Duration:</strong> ${ticket['Total Duration']}</p>
-//             <p><strong>Economy Price:</strong> $${ticket['Economy Price']}</p>
-//             <p><strong>Business Price:</strong> $${ticket['Business Price']}</p>
-//         `;
-//         ticketList.appendChild(ticketDiv);
-//     });
-// });

@@ -1273,6 +1273,7 @@ body {
   max-height: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
+  z-index: 10000;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 1px 1px 11px 0px rgba(0, 0, 0, 0.75);
@@ -1306,7 +1307,7 @@ body {
   background: #f1f1f1;
   border-radius: 10px;
 }
-.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .ticket-city-to -dropdown::-webkit-scrollbar-thumb {
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .ticket-city-to-dropdown::-webkit-scrollbar-thumb {
   background: #007bff;
   border-radius: 10px;
 }
