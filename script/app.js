@@ -332,9 +332,7 @@ document.addEventListener('click', function(event) {
 });
 
 ['dropdown3-content-checkbox-cube', 'dropdown3-content-checkbox-cube-change'].forEach(id => {
-  document.getElementById(id)?.addEventListener('click', function(event) {
-    event.stopPropagation();
-  });
+  document.getElementById(id)?.addEventListener('click', event => event.stopPropagation());
 });
 
 
@@ -369,6 +367,7 @@ function closeDropdown(dropdown, dropdownBox) {
   caretIcon.classList.replace('bi-caret-up-fill', 'bi-caret-down-fill');
   dropdownBox.classList.remove('dropdown-open');
 }
+
 
 function selectOption(optionElement) {
   let box = optionElement.closest('.ticket-dropdowns-container-1-box');
@@ -558,134 +557,111 @@ document.addEventListener('DOMContentLoaded', function () {
 /// DROPDOWN 3 /// DROPDOWN 3 /// DROPDOWN 3 /// DROPDOWN 3 /// DROPDOWN 3 /// DROPDOWN 3 /// DROPDOWN 3 /// DROPDOWN 3 /// DROPDOWN 3
 
 
+let firstInput = document.querySelector('.ticket-city-from-input');
+let secondInput = document.querySelector('.ticket-city-to-input');
+let thirdInput = document.querySelector('.datetime-first-input');
+let fourthInput = document.querySelector('.datetime-second-input');
+let firstInputField = document.querySelector('.ticket-city-from-input');
+let secondInputField = document.querySelector('.ticket-city-to-input');
+let firstDropdown = document.querySelector('.ticket-city-from-dropdown');
+let secondDropdown = document.querySelector('.ticket-city-to-dropdown');
+let firstInputTitle = document.querySelector('.ticket-city-and-date-first-input-title');
+let secondInputTitle = document.querySelector('.ticket-city-and-date-second-input-title');
+let firstOptions = document.querySelectorAll('.ticket-city-from-dropdown h4');
+let secondOptions = document.querySelectorAll('.ticket-city-to-dropdown h4');
+let now = new Date();
+let currentDate = now.toISOString().slice(0, 10);
+thirdInput.value = currentDate;
 
+let later = new Date(now);
+later.setDate(now.getDate() + 7);
+let futureDate = later.toISOString().slice(0, 10);
+fourthInput.value = futureDate;
+[firstInput, secondInput, thirdInput, fourthInput].forEach(input => {
+  input.addEventListener('click', function() {
+    resetBorders(); 
+    setBlueBorder(input); 
+    if (input.type === 'date') {
+      if (input.showPicker) {
+        input.showPicker();
+      } else {
+        input.focus();
+      }
+    }
+  });
+});
+function resetBorders() {
+  firstInput.style.borderBottom = '';
+  secondInput.style.borderBottom = '';
+  thirdInput.style.borderBottom = '';
+  fourthInput.style.borderBottom = '';
+}
+function setBlueBorder(input) {
+  input.style.borderBottom = '2px solid blue';
+}
+firstInputField.addEventListener('click', function() {
+    toggleDropdown(firstDropdown, secondDropdown);
+    firstInputTitle.style.color = ' rgb(0, 98, 255)';
+    secondInputTitle.style.color = '';
 
+});
 
+secondInputField.addEventListener('click', function() {
+    toggleDropdown(secondDropdown, firstDropdown);
+    secondInputTitle.style.color = ' rgb(0, 98, 255)';
+    firstInputTitle.style.color = '';
+});
 
+document.addEventListener('click', function(event) {
+    if (!firstInputField.contains(event.target) && !firstDropdown.contains(event.target)) {
+        firstDropdown.style.display = 'none';
+        firstInputTitle.style.color = ''; 
+        firstInputField.style.borderBottom = "";
+    }
+    if (!secondInputField.contains(event.target) && !secondDropdown.contains(event.target)) {
+        secondDropdown.style.display = 'none';
+        secondInputTitle.style.color = '';
+        secondInputField.style.borderBottom = '';  
+    }
+});
+firstOptions.forEach(option => {
+    option.addEventListener('click', function() {
+        firstInputField.value = this.innerText;
+        firstDropdown.style.display = 'none';
+    });
+});
 
+secondOptions.forEach(option => {
+    option.addEventListener('click', function() {
+        secondInputField.value = this.innerText;
+        secondDropdown.style.display = 'none';
+    });
+});
+function toggleCityDropdown(targetDropdown, otherDropdown) {
+  if (targetDropdown.style.display === 'none' || targetDropdown.style.display === '') {
+      targetDropdown.style.display = 'block';
+      otherDropdown.style.display = 'none';
+  } else {
+      targetDropdown.style.display = 'none';
+  }
+}
+function closeAllCityDropdowns(fromDropdown, toDropdown) {
+  fromDropdown.style.display = 'none';
+  toDropdown.style.display = 'none';
+}
+let fromInput = document.getElementById("ticket-city-from-input");
+let toInput = document.getElementById("ticket-city-to-input");
+let fromDropdown = document.querySelector(".ticket-city-from-dropdown");
+let toDropdown = document.querySelector(".ticket-city-to-dropdown");
+fromInput.addEventListener("click", function () {
+  toggleCityDropdown(fromDropdown, toDropdown);
+  firstInputTitle.style.color = ' rgb(0, 98, 255)';
+});
 
-
-
-
-// let firstInput = document.querySelector('.ticket-city-from-input');
-// let secondInput = document.querySelector('.ticket-city-to-input');
-// let thirdInput = document.querySelector('.datetime-first-input');
-// let fourthInput = document.querySelector('.datetime-second-input');
-// let firstInputField = document.querySelector('.ticket-city-from-input');
-// let secondInputField = document.querySelector('.ticket-city-to-input');
-// let firstDropdown = document.querySelector('.ticket-city-from-dropdown');
-// let secondDropdown = document.querySelector('.ticket-city-to-dropdown');
-// let firstInputTitle = document.querySelector('.ticket-city-and-date-first-input-title');
-// let secondInputTitle = document.querySelector('.ticket-city-and-date-second-input-title');
-// let firstOptions = document.querySelectorAll('.ticket-city-from-dropdown h4');
-// let secondOptions = document.querySelectorAll('.ticket-city-to-dropdown h4');
-// let now = new Date();
-// let currentDate = now.toISOString().slice(0, 10);
-// thirdInput.value = currentDate;
-
-// let later = new Date(now);
-// later.setDate(now.getDate() + 7);
-// let futureDate = later.toISOString().slice(0, 10);
-// fourthInput.value = futureDate;
-// [firstInput, secondInput, thirdInput, fourthInput].forEach(input => {
-//   input.addEventListener('click', function() {
-//     resetBorders(); 
-//     setBlueBorder(input); 
-//     if (input.type === 'date') {
-//       if (input.showPicker) {
-//         input.showPicker();
-//       } else {
-//         input.focus();
-//       }
-//     }
-//   });
-// });
-// function resetBorders() {
-//   firstInput.style.borderBottom = '';
-//   secondInput.style.borderBottom = '';
-//   thirdInput.style.borderBottom = '';
-//   fourthInput.style.borderBottom = '';
-// }
-// function setBlueBorder(input) {
-//   input.style.borderBottom = '2px solid blue';
-// }
-// firstInputField.addEventListener('click', function() {
-//     toggleDropdown(firstDropdown, secondDropdown);
-//     firstInputTitle.style.color = ' rgb(0, 98, 255)';
-//     secondInputTitle.style.color = '';
-
-// });
-
-// secondInputField.addEventListener('click', function() {
-//     toggleDropdown(secondDropdown, firstDropdown);
-//     secondInputTitle.style.color = ' rgb(0, 98, 255)';
-//     firstInputTitle.style.color = '';
-// });
-
-// document.addEventListener('click', function(event) {
-//     if (!firstInputField.contains(event.target) && !firstDropdown.contains(event.target)) {
-//         firstDropdown.style.display = 'none';
-//         firstInputTitle.style.color = ''; 
-//         firstInputField.style.color = "";
-//     }
-//     if (!secondInputField.contains(event.target) && !secondDropdown.contains(event.target)) {
-//         secondDropdown.style.display = 'none';
-//         secondInputTitle.style.color = '';
-//         secondInputField.style.borderBottom = '';  
-//     }
-// });
-
-// firstOptions.forEach(option => {
-//     option.addEventListener('click', function() {
-//         firstInputField.value = this.innerText;
-//         firstDropdown.style.display = 'none';
-//     });
-// });
-
-// secondOptions.forEach(option => {
-//     option.addEventListener('click', function() {
-//         secondInputField.value = this.innerText;
-//         secondDropdown.style.display = 'none';
-//     });
-// });
-
-// function toggleDropdown(targetDropdown, otherDropdown) {
-//     if (targetDropdown.style.display === 'none' || targetDropdown.style.display === '') {
-//         targetDropdown.style.display = 'block';
-//         otherDropdown.style.display = 'none';
-//     } else {
-//         targetDropdown.style.display = 'none';
-//     }
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+toInput.addEventListener("click", function () {
+  toggleCityDropdown(toDropdown, fromDropdown);
+  secondInputTitle.style.color = ' rgb(0, 98, 255)';
+});
 
 
 
