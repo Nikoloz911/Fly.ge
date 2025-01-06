@@ -349,9 +349,9 @@ body {
 }
 
 .home-page {
-  background-color: #ddd;
+  background-color: #fff;
   width: 100%;
-  height: 3300px;
+  height: auto;
 }
 .home-page .home-page-ticket-section {
   height: 500px;
@@ -1340,21 +1340,337 @@ body {
 .home-page .home-page-suggestion-ticket-section {
   height: 1000px;
   border: solid 3px blue;
+  display: none;
 }
 .home-page .home-page-partners-section {
   height: 300px;
   border: solid 5px green;
+  display: none;
 }
 .home-page .home-page-european-ticket-section {
   height: 800px;
   border: solid 5px orange;
+  display: none;
 }
 .home-page .home-page-description-section {
   height: 600px;
   border: solid 5px purple;
+  display: none;
+}
+.home-page .result-container {
+  background-color: #ddd;
+  width: 1150px;
+  height: auto;
+  margin-left: 15%;
+  margin-right: 15%;
+  display: none;
+  padding: 50px 50px;
+}
+.home-page .result-container .ticket-result {
+  border: solid 1px grey;
+  border-radius: 5px;
+  display: flex;
+  margin-top: 20px;
+  height: auto;
+  width: auto;
+  transition: 500ms;
+  cursor: pointer;
+}
+.home-page .result-container .ticket-result:hover {
+  background-color: rgb(225, 237, 255);
+}
+.home-page .result-container .ticket-result .ticket-result-title {
+  width: 250px;
+  margin-right: 15px;
+}
+.home-page .result-container .ticket-result .ticket-price {
+  margin-right: 20px;
+}
+.home-page .result-container .No-tickets {
+  color: red;
+  font-size: 25px;
+  text-align: center;
 }
 
 .footer {
+  height: 550px;
+  background-color: #fff;
+  width: 100%;
+}
+.footer .footer-content {
+  margin-left: 15%;
+  margin-right: 15%;
   height: 500px;
-  background-color: #000;
+}
+.footer .footer-content .footer-contacts-section-main {
+  border-bottom: solid 1px #bdbdbd;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  gap: 100px;
+}
+.footer .footer-content .footer-contacts-section-main .footer-tickets-section .footer-tickets-section-title {
+  font-size: 22px;
+  padding-top: 20px;
+  color: #151515;
+}
+.footer .footer-content .footer-contacts-section-main .footer-company-section .footer-company-section-title {
+  font-size: 22px;
+  padding-top: 20px;
+  color: #151515;
+}
+.footer .footer-content .footer-contacts-section-main .footer-company-section .footer-company-section-first-link {
+  font-size: 16px;
+  color: rgb(66, 66, 66);
+  cursor: pointer;
+  transition: 500ms;
+}
+.footer .footer-content .footer-contacts-section-main .footer-company-section .footer-company-section-first-link:hover {
+  color: rgb(0, 98, 255);
+}
+.footer .footer-content .footer-contacts-section-main .footer-company-section .footer-company-section-second-link {
+  font-size: 16px;
+  color: rgb(66, 66, 66);
+  cursor: pointer;
+  transition: 500ms;
+}
+.footer .footer-content .footer-contacts-section-main .footer-company-section .footer-company-section-second-link:hover {
+  color: rgb(0, 98, 255);
+}
+.footer .footer-content .footer-contacts-section-main .footer-information-section .footer-information-section-title {
+  font-size: 22px;
+  padding-top: 20px;
+  color: #151515;
+}
+.footer .footer-content .footer-contacts-section-main .footer-information-section .footer-information-section-first-link {
+  font-size: 16px;
+  color: rgb(66, 66, 66);
+  cursor: pointer;
+  transition: 500ms;
+}
+.footer .footer-content .footer-contacts-section-main .footer-information-section .footer-information-section-first-link:hover {
+  color: rgb(0, 98, 255);
+}
+.footer .footer-content .footer-contacts-section-main .footer-information-section .footer-information-section-second-link {
+  font-size: 16px;
+  color: rgb(66, 66, 66);
+  cursor: pointer;
+  transition: 500ms;
+}
+.footer .footer-content .footer-contacts-section-main .footer-information-section .footer-information-section-second-link:hover {
+  color: rgb(0, 98, 255);
+}
+.footer .footer-content .footer-contacts-section-main .footer-contacts-section {
+  width: 350px;
+}
+.footer .footer-content .footer-contacts-section-main .footer-contacts-section .footer-contacts-section-title {
+  font-size: 22px;
+  padding-top: 20px;
+  color: #151515;
+}
+.footer .footer-content .footer-contacts-section-main .footer-contacts-section .footer-message-box {
+  cursor: pointer;
+  background-color: #eaf0fd;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer .footer-content .footer-contacts-section-main .footer-contacts-section .footer-message-box .footer-message-icon {
+  margin-left: 20px;
+  font-size: 20px;
+}
+.footer .footer-content .footer-contacts-section-main .footer-contacts-section .footer-message-box .footer-message-box-title {
+  font-size: 18px;
+  color: #151515;
+}
+.footer .footer-content .footer-contacts-section-main .footer-contacts-section .footer-email-box {
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: #eaf0fd;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer .footer-content .footer-contacts-section-main .footer-contacts-section .footer-email-box .footer-email-icon {
+  margin-left: 20px;
+  font-size: 20px;
+}
+.footer .footer-content .footer-contacts-section-main .footer-contacts-section .footer-email-box .footer-email-box-title {
+  font-size: 18px;
+  color: #151515;
+}
+.footer .footer-content .footer-contacts-section-main .footer-contacts-section .footer-phone-box {
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: #eaf0fd;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer .footer-content .footer-contacts-section-main .footer-contacts-section .footer-phone-box .footer-phone-icon {
+  margin-left: 20px;
+  font-size: 20px;
+}
+.footer .footer-content .footer-contacts-section-main .footer-contacts-section .footer-phone-box .footer-phone-box-title {
+  font-size: 18px;
+  color: #151515;
+}
+.footer .footer-content .footer-email-section {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: solid 1px #bdbdbd;
+  padding-bottom: 30px;
+}
+.footer .footer-content .footer-email-section .footer-email-left-side {
+  display: flex;
+}
+.footer .footer-content .footer-email-section .footer-email-left-side .footer-email-section-box {
+  background-color: rgb(0, 98, 255);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 22px;
+}
+.footer .footer-content .footer-email-section .footer-email-left-side .footer-email-section-title {
+  font-size: 1rem;
+  color: #151515;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.footer .footer-content .footer-email-section .footer-email-right-side {
+  display: flex;
+  align-items: center;
+}
+.footer .footer-content .footer-email-section .footer-email-right-side .footer-email-input {
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+  width: 250px;
+  height: 60px;
+  font-size: 1.125rem;
+  padding-left: 1rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+.footer .footer-content .footer-email-section .footer-email-right-side .footer-email-input:focus {
+  border-bottom-color: blue;
+}
+.footer .footer-content .footer-email-section .footer-email-right-side .footer-email-button {
+  margin-left: 1.5rem;
+  background-color: rgba(78, 78, 78, 0.5215686275);
+  width: 160px;
+  height: 50px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 1rem;
+  border: solid 1px rgba(78, 78, 78, 0.5215686275);
+}
+.footer .footer-content .footer-email-section .footer-email-right-side .footer-email-button:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+.footer .footer-content .footer-email-section #success-cube {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 380px;
+  gap: 20px;
+  height: 60px;
+  background-color: rgb(78, 255, 78);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.footer .footer-content .footer-email-section #success-cube.show {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.footer .footer-content .footer-email-section #success-cube.hide {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.footer .footer-content .footer-bottom-section {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  margin-top: 20px;
+}
+.footer .footer-content .footer-bottom-section .footer-bottom-section-title {
+  margin-left: 30px;
+  color: #3e3e3e;
+  font-size: 16px;
+}
+.footer .footer-content .footer-bottom-section .footer-social-media-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-left: 500px;
+  height: 60px;
+  width: 200px;
+}
+.footer .footer-content .footer-bottom-section .footer-social-media-box .footer-youtube-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #3e3e3e;
+  border: solid 2px #838383;
+  font-size: 20px;
+  transition: 500ms;
+}
+.footer .footer-content .footer-bottom-section .footer-social-media-box .footer-youtube-box:hover {
+  color: red;
+}
+.footer .footer-content .footer-bottom-section .footer-social-media-box .footer-facebook-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: solid 2px #838383;
+  color: #3e3e3e;
+  font-size: 20px;
+  transition: 500ms;
+}
+.footer .footer-content .footer-bottom-section .footer-social-media-box .footer-facebook-box:hover {
+  color: rgb(0, 98, 255);
+}
+.footer .footer-content .footer-bottom-section .footer-social-media-box .footer-linkdIn-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid 2px #838383;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #3e3e3e;
+  font-size: 20px;
+  transition: 500ms;
+}
+.footer .footer-content .footer-bottom-section .footer-social-media-box .footer-linkdIn-box:hover {
+  color: rgb(0, 98, 255);
 }/*# sourceMappingURL=style.css.map */

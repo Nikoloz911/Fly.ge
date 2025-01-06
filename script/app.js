@@ -709,7 +709,7 @@ function createDropdownOption(airport, type) {
   }
   icon.innerHTML = iconHtml;
   let name = document.createElement('h4');
-  name.textContent = `${airport.ICAO_Code} - ${airport.Airport_Name} (${airport.City})`;
+  name.textContent = `${airport.City} (${airport.ICAO_Code}),  ${airport.Airport_Name} `;
   dropdownOption.appendChild(icon);
   dropdownOption.appendChild(name);
   return dropdownOption;
@@ -720,3 +720,95 @@ function createDropdownOption(airport, type) {
 
 
 
+
+document.getElementById('searchButton').addEventListener('click', function() {
+  let fromCityInput = document.getElementById('ticket-city-from-input').value.trim();
+  let toCityInput = document.getElementById('ticket-city-to-input').value.trim();
+  let fromCityCode = fromCityInput.split(' - ')[0].trim();
+  let toCityCode = toCityInput.split(' - ')[0].trim();
+
+  fetch('TicketsResults.json')
+      .then(response => response.json())
+      .then(data => {
+          let filteredResults = data.filter(ticket => ticket.From === fromCityCode && ticket.To === toCityCode);
+          let resultContainer = document.querySelector('.result-container');
+          resultContainer.style.display = 'block';
+          resultContainer.innerHTML = '';
+          if (filteredResults.length > 0) {
+              let lowestPriceTicket = filteredResults.reduce((minTicket, currentTicket) => {
+                  return parseFloat(currentTicket.EconomyPrice) < parseFloat(minTicket.EconomyPrice) ? currentTicket : minTicket;
+              });
+              fromCityInput.value = '';
+              toCityInput.value = '';
+              filteredResults.forEach(ticket => {
+                  let resultHTML = `
+                      <div class="ticket-result ${ticket === lowestPriceTicket ? 'lowest-price' : ''}">
+                          <h3 class="ticket-result-title">${ticket.Airline} (${ticket.RouteNo})</h3>
+                          <p class="ticket-from">From: ${ticket.fromAirportName} (${ticket.From})</p>
+                          <p class="ticket-to">To: ${ticket.toAirportName} (${ticket.To})</p>
+                          <p class="ticket-price">$${ticket.EconomyPrice}</p>
+                          <p>Transfer: ${ticket.TransferCity || 'No transfer'}</p>
+                          <p>Departure: ${ticket.Departure}</p>
+                          <p>Arrival: ${ticket.Arrival}</p>
+                      </div>
+                  `;
+                  resultContainer.innerHTML += resultHTML;
+              });
+              let lowestPriceElements = document.querySelectorAll('.ticket-result.lowest-price');
+              lowestPriceElements.forEach(ticket => {
+                  ticket.style.borderColor = ' rgb(3, 161, 3)';
+                  ticket.querySelector('.ticket-price').style.color = ' rgb(0, 203, 0)';
+              });
+          } else {
+              resultContainer.innerHTML = '<p  class="No-tickets">No tickets found for your search.</p>';
+          }
+      })
+});
+
+
+
+
+
+
+
+/// FOOTER INPUT AND BUTTON  /// FOOTER INPUT AND BUTTON  /// FOOTER INPUT AND BUTTON  /// FOOTER INPUT AND BUTTON
+document.addEventListener("DOMContentLoaded", function () {
+  let emailInput = document.querySelector(".footer-email-input");
+  let subscribeButton = document.querySelector(".footer-email-button");
+  let successCube = document.getElementById("success-cube");
+  if (emailInput && subscribeButton && successCube) {
+    function isValidGmail(email) {
+      let trimmedEmail = email.trim();
+      return (
+        trimmedEmail.includes("@") &&
+        trimmedEmail.endsWith("@gmail.com")
+      );
+    }
+    subscribeButton.addEventListener("click", function (event) {
+      event.preventDefault();
+      let emailValue = emailInput.value;
+      if (isValidGmail(emailValue)) {
+        emailInput.classList.remove("invalid");
+        successCube.classList.add("show");
+        successCube.classList.remove("hide");
+        setTimeout(() => {
+          successCube.classList.add("hide");
+          successCube.classList.remove("show");
+        }, 3000);
+      } else {
+        emailInput.classList.add("invalid");
+        emailInput.style.borderBottomColor = "red";
+        successCube.classList.add("hide");
+        successCube.classList.remove("show");
+      }
+      emailInput.value = "";
+    });
+   emailInput.addEventListener("focus", () => {
+      emailInput.style.borderBottomColor = "blue";
+    });
+    emailInput.addEventListener("blur", () => {
+      emailInput.style.borderBottomColor = "";
+    });
+  } 
+});
+/// FOOTER INPUT AND BUTTON  /// FOOTER INPUT AND BUTTON  /// FOOTER INPUT AND BUTTON  /// FOOTER INPUT AND BUTTON

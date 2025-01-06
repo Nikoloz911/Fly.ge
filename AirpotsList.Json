@@ -1,9 +1,27 @@
-[{
+[
+   
+    {
+        "ICAO_Code": "BUS",
+        "Airport_Name": "საქართველო",
+        "City": "ბათუმი"
+        },
+
+        {
+            "ICAO_Code": "TBS",
+            "Airport_Name": "საქართველო",
+            "City": "თბილისი"
+            },
+            {
+                "ICAO_Code": "KUT",
+                "Airport_Name": "საქართველო",
+                "City": "ქუთაისი"
+                },
+
+    {
 "ICAO_Code": "CDG",
 "Airport_Name": "Charles de Gaulle Airport",
 "City": "Paris"
-}
-,
+},
 {
 "ICAO_Code": "LHR",
 "Airport_Name": "London Heathrow Airport",
