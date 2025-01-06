@@ -727,7 +727,7 @@ document.getElementById('searchButton').addEventListener('click', function() {
   let fromCityCode = fromCityInput.split(' - ')[0].trim();
   let toCityCode = toCityInput.split(' - ')[0].trim();
 
-  fetch('TicketsResults.json')
+  fetch('TicketsResult.json')
       .then(response => response.json())
       .then(data => {
           let filteredResults = data.filter(ticket => ticket.From === fromCityCode && ticket.To === toCityCode);
