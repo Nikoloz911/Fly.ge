@@ -122,6 +122,7 @@ body {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  z-index: 999999;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 .modal-content .modal-header-container {
@@ -348,7 +349,1328 @@ body {
 }
 
 .home-page {
-  background-color: #ddd;
+  background-color: #fff;
   width: 100%;
+  height: auto;
+}
+.home-page .home-page-ticket-section {
   height: 500px;
+}
+.home-page .home-page-ticket-section .home-page-ticket-section-main-image {
+  width: 100%;
+  height: 100%;
+}
+.home-page .home-page-ticket-section .home-page-ticket-section-title {
+  color: #fff;
+  position: absolute;
+  left: 270px;
+  top: 95px;
+}
+.home-page .home-page-ticket-section .ticket-searcher-title-container {
+  position: absolute;
+  left: 270px;
+  top: 200px;
+  border: solid 1px #fff;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 210px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.home-page .home-page-ticket-section .ticket-searcher-title-container .plane-container {
+  background-color: rgb(0, 98, 255);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.home-page .home-page-ticket-section .ticket-searcher-title-container .plane-container .plane-image {
+  color: white;
+}
+.home-page .home-page-ticket-section .ticket-searcher-title-container .ticket-searcher-title-container-title {
+  color: #000;
+  font-size: 15px;
+}
+.home-page .home-page-ticket-section .ticket-search-container {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 1100px;
+  height: 210px;
+  top: 270px;
+  left: 270px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container {
+  width: 1000px;
+  margin-top: 5px;
+  height: 45px;
+  display: flex;
+  gap: 15px;
+  margin-left: 50px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: 500ms;
+  z-index: 9999;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box .ticket-dropdowns-container-1-box-repeat-icon {
+  color: rgb(0, 98, 255);
+  font-size: 22px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box .ticket-dropdowns-container-1-box-text {
+  font-size: 15px;
+  color: rgb(57, 57, 57);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box .ticket-dropdowns-container-1-box-caret-icon {
+  font-size: 11px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box .ticket-dropdowns-container-1-box-caret-icon i {
+  transition: transform 0.3s ease;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box.dropdown-open .ticket-dropdowns-container-1-box-text {
+  color: rgb(0, 98, 255);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box.dropdown-open .ticket-dropdowns-container-1-box-caret-icon i {
+  color: rgb(0, 98, 255);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box .dropdown-hidden {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 210px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75);
+  display: none;
+  height: auto;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box .dropdown-visible {
+  display: block;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box .dropdown-content {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  transition: 500ms;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box .dropdown-content .dropdown-content-icon-1 {
+  color: #000;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box .dropdown-content .dropdown-content-text {
+  margin-left: 20px;
+  font-size: 14px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box .dropdown-content:hover {
+  background-color: #ddd;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box:hover {
+  background-color: #e5e5e5;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  transition: 500ms;
+  cursor: pointer;
+  z-index: 9999;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .ticket-dropdowns-container-1-box-repeat-icon {
+  color: rgb(0, 98, 255);
+  font-size: 22px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .ticket-dropdowns-container-1-box-text {
+  font-size: 15px;
+  color: rgb(57, 57, 57);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .ticket-dropdowns-container-1-box-caret-icon {
+  font-size: 11px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .ticket-dropdowns-container-1-box-caret-icon i {
+  transition: transform 0.3s ease;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box.dropdown-open .ticket-dropdowns-container-1-box-text {
+  color: rgb(0, 98, 255);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box.dropdown-open .ticket-dropdowns-container-1-box-caret-icon i {
+  color: rgb(0, 98, 255);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-hidden {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 330px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75);
+  display: none;
+  height: 300px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-visible {
+  display: block;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section {
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container {
+  display: flex;
+  height: 70px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-title-side {
+  margin-left: 20px;
+  width: 45%;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-icon-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-icon-container .dropdown-people-section-1-container-title-side-icon {
+  color: #000;
+  font-size: 19px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-description-container {
+  width: 80%;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-description-container .dropdown-people-section-1-container-title-side-description-container-text-1 {
+  font-size: 16px;
+  color: rgb(54, 54, 54);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-description-container .dropdown-people-section-1-container-title-side-description-container-text-2 {
+  font-size: 12px;
+  color: rgba(54, 54, 54, 0.836);
+  transform: translateY(-10px);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-buttons-side {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-buttons-side .number-option-cube {
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms background-color;
+  transition: 500ms;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-buttons-side .number-option-cube .number-reduce-option-cube-icon {
+  color: #000;
+  font-size: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-buttons-side .number-option-cube:hover {
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-buttons-side .number-option-cube.clicked {
+  background-color: #ddd;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-buttons-side .number-option-cube-2 {
+  cursor: pointer;
+  background-color: #fff;
+  border: solid 1px rgba(128, 128, 128, 0.5);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-buttons-side .number-option-cube-2 .number-reduce-option-cube-icon {
+  color: #000;
+  font-size: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-buttons-side .number-option-cube-3 {
+  cursor: pointer;
+  background-color: rgb(0, 98, 255);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-buttons-side .number-option-cube-3 .number-reduce-option-cube-icon {
+  color: #fff;
+  font-size: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-buttons-side .number-option-cube-3:hover {
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-1-container .dropdown-people-section-1-container-buttons-side .number-option-cube-3.clicked {
+  background-color: rgb(78, 146, 255);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container {
+  display: flex;
+  height: 70px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-title-side {
+  margin-left: 20px;
+  width: 45%;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-icon-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-icon-container .dropdown-people-section-1-container-title-side-icon .baby-icon-image {
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-icon-container .dropdown-people-section-1-container-title-side-icon .image-line {
+  background-color: #fff;
+  top: 140px;
+  position: absolute;
+  width: 60px;
+  height: 5px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-description-container {
+  width: 80%;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-description-container .dropdown-people-section-1-container-title-side-description-container-text-1 {
+  font-size: 16px;
+  color: rgb(54, 54, 54);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-description-container .dropdown-people-section-1-container-title-side-description-container-text-2 {
+  font-size: 12px;
+  color: rgba(54, 54, 54, 0.836);
+  transform: translateY(-10px);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-buttons-side {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-buttons-side .number-option-cube {
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms background-color;
+  transition: 500ms;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-buttons-side .number-option-cube .number-reduce-option-cube-icon {
+  color: #000;
+  font-size: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-buttons-side .number-option-cube:hover {
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-buttons-side .number-option-cube.clicked {
+  background-color: #ddd;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-buttons-side .number-option-cube-2 {
+  cursor: pointer;
+  background-color: #fff;
+  border: solid 1px rgba(128, 128, 128, 0.5);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-buttons-side .number-option-cube-2 .number-reduce-option-cube-icon {
+  color: #000;
+  font-size: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-buttons-side .number-option-cube-3 {
+  cursor: pointer;
+  background-color: rgb(0, 98, 255);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-buttons-side .number-option-cube-3 .number-reduce-option-cube-icon {
+  color: #a5a5a5;
+  color: #fff;
+  font-size: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-buttons-side .number-option-cube-3:hover {
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-2-container .dropdown-people-section-1-container-buttons-side .number-option-cube-3.clicked {
+  background-color: rgb(78, 146, 255);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container {
+  height: 70px;
+  display: flex;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-title-side {
+  margin-left: 20px;
+  width: 45%;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-icon-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-icon-container .dropdown-people-section-1-container-title-side-icon .baby-icon-image {
+  width: 30px;
+  height: 2%;
+  border: none;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-description-container {
+  width: 80%;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-description-container .dropdown-people-section-1-container-title-side-description-container-text-1 {
+  font-size: 16px;
+  color: rgb(54, 54, 54);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-title-side .dropdown-people-section-1-container-title-side-description-container .dropdown-people-section-1-container-title-side-description-container-text-2 {
+  font-size: 12px;
+  color: rgba(54, 54, 54, 0.836);
+  transform: translateY(-10px);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-buttons-side {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-buttons-side .number-option-cube {
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms background-color;
+  transition: 500ms;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-buttons-side .number-option-cube .number-reduce-option-cube-icon {
+  color: #000;
+  font-size: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-buttons-side .number-option-cube:hover {
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-buttons-side .number-option-cube.clicked {
+  background-color: #ddd;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-buttons-side .number-option-cube-2 {
+  cursor: pointer;
+  background-color: #fff;
+  border: solid 1px rgba(128, 128, 128, 0.5);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-buttons-side .number-option-cube-2 .number-reduce-option-cube-icon {
+  color: #000;
+  font-size: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-buttons-side .number-option-cube-3 {
+  cursor: pointer;
+  background-color: rgb(0, 98, 255);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.75);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-buttons-side .number-option-cube-3 .number-reduce-option-cube-icon {
+  color: #fff;
+  font-size: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-buttons-side .number-option-cube-3:hover {
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.75);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-people-section .dropdown-people-section-3-container .dropdown-people-section-1-container-buttons-side .number-option-cube-3.clicked {
+  background-color: rgb(78, 146, 255);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-buttons-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 50px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-buttons-section .dropdown-delete-button {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  width: 140px;
+  height: 45px;
+  transition: 500ms;
+  border-radius: 5px;
+  font-size: 16px;
+  border: solid 1px rgb(233, 233, 233);
+  z-index: 9000;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-buttons-section .dropdown-delete-button:hover {
+  background-color: #ddd;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-buttons-section .dropdown-confirmed-button {
+  z-index: 9000;
+  border: solid 1px rgb(0, 98, 255);
+  background-color: rgb(0, 98, 255);
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+  width: 140px;
+  height: 45px;
+  font-size: 16px;
+  transition: 500ms;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .dropdown-buttons-section .dropdown-confirmed-button:hover {
+  background-color: rgb(26, 114, 255);
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.75);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box:hover {
+  background-color: #e5e5e5;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: 500ms;
+  z-index: 99;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .ticket-dropdowns-container-1-box-text {
+  font-size: 15px;
+  color: rgb(57, 57, 57);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .ticket-dropdowns-container-1-box-caret-icon {
+  font-size: 11px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .ticket-dropdowns-container-1-box-caret-icon i {
+  transition: transform 0.3s ease;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box.dropdown-open .ticket-dropdowns-container-1-box-text {
+  color: rgb(0, 98, 255);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box.dropdown-open .ticket-dropdowns-container-1-box-caret-icon i {
+  color: rgb(0, 98, 255);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown-hidden {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 350px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.75);
+  display: none;
+  height: 350px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown-visible {
+  display: block;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content {
+  height: 90%;
+  margin-top: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content .dropdown3-content-checkboxes-container {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content .dropdown3-content-checkboxes-container .checkbox-container {
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  gap: 10px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content .dropdown3-content-checkboxes-container .checkbox-container .checkbox {
+  display: none;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content .dropdown3-content-checkboxes-container .checkbox-container .checkbox-round {
+  position: relative;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  transition: 0.3s ease;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content .dropdown3-content-checkboxes-container .checkbox-container .checkbox-round::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: white;
+  transition: 0.3s ease;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content .dropdown3-content-checkboxes-container .checkbox-container .checkbox:checked + .checkbox-round {
+  border-color: blue;
+  background-color: white;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content .dropdown3-content-checkboxes-container .checkbox-container .checkbox:checked + .checkbox-round::after {
+  background-color: blue;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content .dropdown3-content-checkboxes-container .checkbox-container .checkbox-label-text {
+  margin: 0;
+  font-size: 16px;
+  color: black;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  margin-left: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content .dropdown3-content-checkboxes-container .checkbox-container:hover .checkbox-round {
+  border-color: lightblue;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content .dropdown3-content-title {
+  font-size: 17px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content .dropdown3-content-bottom-container {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content .dropdown3-content-bottom-container .dropdown3-content-checkbox-cube {
+  background-color: transparent;
+  transition: 500ms;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content .dropdown3-content-bottom-container .dropdown3-content-checkbox-cube:hover {
+  background-color: #ddd;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content .dropdown3-content-bottom-container .dropdown3-content-checkbox-cube.checked {
+  background-color: rgb(195, 218, 255);
+  transition: background-color 0.3s ease;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content .dropdown3-content-bottom-container .dropdown3-content-checkbox-cube .dropdown3-content-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: 500ms;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content .dropdown3-content-bottom-container .dropdown3-content-checkbox-cube-change {
+  background-color: #000;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  position: relative;
+  transition: 1000ms;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content .dropdown3-content-bottom-container .dropdown3-content-checkbox-cube-change .dropdown3-content-checkbox-cube-change-box {
+  display: none;
+  background-color: #3e3e3e;
+  color: #ddd;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: 25px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-3-box .dropdown3-content .dropdown3-content-bottom-container .dropdown3-content-checkbox-cube-change:hover .dropdown3-content-checkbox-cube-change-box {
+  display: block;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container {
+  width: 1020px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .ticket-city-and-date-first-input-title {
+  position: absolute;
+  font-size: 15px;
+  color: #3e3e3e;
+  top: 40px;
+  left: 90px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .ticket-city-and-date-second-input-title {
+  position: absolute;
+  font-size: 15px;
+  color: #3e3e3e;
+  top: 40px;
+  left: 370px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .datetime-first-title {
+  position: absolute;
+  font-size: 15px;
+  color: #3e3e3e;
+  top: 40px;
+  left: 610px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .datetime-second-title {
+  position: absolute;
+  font-size: 15px;
+  color: #3e3e3e;
+  top: 40px;
+  left: 840px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .ticket-city-from-icon {
+  position: absolute;
+  font-size: 22px;
+  color: #000;
+  left: 50px;
+  top: 75px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .ticket-city-to-icon {
+  position: absolute;
+  font-size: 22px;
+  left: 340px;
+  top: 75px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .between-cube {
+  border: solid 1px grey;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  transition: 500ms;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .between-cube .between-inside-cube {
+  background-color: #fff;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: solid 1px grey;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .between-cube:hover {
+  background-color: #ddd;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .ticket-city-from-input {
+  height: 45px;
+  width: 210px;
+  font-size: 20px;
+  outline: none;
+  border-left: none;
+  border-right: none;
+  border-top: 1px #000 !important;
+  overflow: hidden;
+  padding-left: 40px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .ticket-city-to-input {
+  height: 45px;
+  width: 210px;
+  font-size: 20px;
+  outline: none;
+  border-left: none;
+  border-right: none;
+  border-top: 1px #000 !important;
+  overflow: hidden;
+  padding-left: 40px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .datetime-first-input {
+  height: 45px;
+  width: 210px;
+  font-size: 20px;
+  outline: none;
+  border-left: none;
+  border-right: none;
+  border-top: 1px #000 !important;
+  overflow: hidden;
+  padding-left: 10px;
+  margin-left: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .datetime-second-input {
+  height: 45px;
+  width: 210px;
+  font-size: 20px;
+  outline: none;
+  border-left: none;
+  border-right: none;
+  border-top: 1px #000 !important;
+  overflow: hidden;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .ticket-city-from-dropdown {
+  position: absolute;
+  overflow-y: auto;
+  display: none;
+  top: 110px;
+  background-color: #Fff;
+  width: auto;
+  max-height: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 10000;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 11px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 1px 11px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 11px 0px rgba(0, 0, 0, 0.75);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .ticket-city-from-dropdown .ticket-city-from-dropdown-option-cube {
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 300px;
+  overflow: hidden;
+  display: flex;
+  gap: 20px;
+  justify-content: start;
+  align-items: center;
+  height: 30px;
+  transition: 500ms;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .ticket-city-from-dropdown .ticket-city-from-dropdown-option-cube .city-icon {
+  color: #000;
+  font-size: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .ticket-city-from-dropdown .ticket-city-from-dropdown-option-cube:hover {
+  background-color: #ddd;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .ticket-city-from-dropdown::-webkit-scrollbar {
+  width: 12px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .ticket-city-from-dropdown::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .ticket-city-from-dropdown::-webkit-scrollbar-thumb {
+  background: #007bff;
+  border-radius: 10px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .ticket-city-to-dropdown {
+  position: absolute;
+  top: 115px;
+  left: 320px;
+  display: none;
+  overflow-y: auto;
+  width: auto;
+  max-height: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 10000;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 11px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 1px 11px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 11px 0px rgba(0, 0, 0, 0.75);
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .ticket-city-to-dropdown .ticket-city-to-dropdown-option-cube {
+  padding: 10px 20px;
+  cursor: pointer;
+  overflow: hidden;
+  width: 300px;
+  display: flex;
+  gap: 20px;
+  justify-content: start;
+  align-items: center;
+  height: 30px;
+  transition: 500ms;
+  margin-top: 10px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .ticket-city-to-dropdown .ticket-city-to-dropdown-option-cube .city-icon {
+  color: #000;
+  font-size: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .ticket-city-to-dropdown .ticket-city-to-dropdown-option-cube:hover {
+  background-color: #ddd;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .ticket-city-to-dropdown::-webkit-scrollbar {
+  width: 12px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .ticket-city-to-dropdown::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .ticket-city-and-date-dropdowns-container .ticket-city-to-dropdown::-webkit-scrollbar-thumb {
+  background: #007bff;
+  border-radius: 10px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .search-button-container {
+  margin-left: 78%;
+  width: 200px;
+  display: flex;
+  justify-content: end;
+}
+.home-page .home-page-ticket-section .ticket-search-container .search-button-container .search-button {
+  width: 180px;
+  border: solid 1px rgb(0, 98, 255);
+  background-color: rgb(0, 98, 255);
+  border-radius: 5px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.home-page .home-page-ticket-section .ticket-search-container .search-button-container .search-button .search-button-icon {
+  color: #fff;
+  font-size: 20px;
+}
+.home-page .home-page-ticket-section .ticket-search-container .search-button-container .search-button .search-button-text {
+  color: #fff;
+  font-size: 16px;
+}
+.home-page .home-page-suggestion-ticket-section {
+  height: 1000px;
+  border: solid 3px blue;
+  display: none;
+}
+.home-page .home-page-partners-section {
+  height: 300px;
+  border: solid 5px green;
+  display: none;
+}
+.home-page .home-page-european-ticket-section {
+  height: 800px;
+  border: solid 5px orange;
+  display: none;
+}
+.home-page .home-page-description-section {
+  height: 600px;
+  border: solid 5px purple;
+  display: none;
+}
+.home-page .result-container {
+  background-color: #ddd;
+  width: 1150px;
+  height: auto;
+  margin-left: 15%;
+  margin-right: 15%;
+  display: none;
+  padding: 50px 50px;
+}
+.home-page .result-container .ticket-result {
+  border: solid 1px grey;
+  border-radius: 5px;
+  display: flex;
+  margin-top: 20px;
+  height: auto;
+  width: auto;
+  transition: 500ms;
+  cursor: pointer;
+}
+.home-page .result-container .ticket-result:hover {
+  background-color: rgb(225, 237, 255);
+}
+.home-page .result-container .ticket-result .ticket-result-title {
+  width: 250px;
+  margin-right: 15px;
+}
+.home-page .result-container .ticket-result .ticket-price {
+  margin-right: 20px;
+}
+.home-page .result-container .No-tickets {
+  color: red;
+  font-size: 25px;
+  text-align: center;
+}
+
+.footer {
+  height: 550px;
+  background-color: #fff;
+  width: 100%;
+}
+.footer .footer-content {
+  margin-left: 15%;
+  margin-right: 15%;
+  height: 500px;
+}
+.footer .footer-content .footer-contacts-section-main {
+  border-bottom: solid 1px #bdbdbd;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  gap: 100px;
+}
+.footer .footer-content .footer-contacts-section-main .footer-tickets-section .footer-tickets-section-title {
+  font-size: 22px;
+  padding-top: 20px;
+  color: #151515;
+}
+.footer .footer-content .footer-contacts-section-main .footer-company-section .footer-company-section-title {
+  font-size: 22px;
+  padding-top: 20px;
+  color: #151515;
+}
+.footer .footer-content .footer-contacts-section-main .footer-company-section .footer-company-section-first-link {
+  font-size: 16px;
+  color: rgb(66, 66, 66);
+  cursor: pointer;
+  transition: 500ms;
+}
+.footer .footer-content .footer-contacts-section-main .footer-company-section .footer-company-section-first-link:hover {
+  color: rgb(0, 98, 255);
+}
+.footer .footer-content .footer-contacts-section-main .footer-company-section .footer-company-section-second-link {
+  font-size: 16px;
+  color: rgb(66, 66, 66);
+  cursor: pointer;
+  transition: 500ms;
+}
+.footer .footer-content .footer-contacts-section-main .footer-company-section .footer-company-section-second-link:hover {
+  color: rgb(0, 98, 255);
+}
+.footer .footer-content .footer-contacts-section-main .footer-information-section .footer-information-section-title {
+  font-size: 22px;
+  padding-top: 20px;
+  color: #151515;
+}
+.footer .footer-content .footer-contacts-section-main .footer-information-section .footer-information-section-first-link {
+  font-size: 16px;
+  color: rgb(66, 66, 66);
+  cursor: pointer;
+  transition: 500ms;
+}
+.footer .footer-content .footer-contacts-section-main .footer-information-section .footer-information-section-first-link:hover {
+  color: rgb(0, 98, 255);
+}
+.footer .footer-content .footer-contacts-section-main .footer-information-section .footer-information-section-second-link {
+  font-size: 16px;
+  color: rgb(66, 66, 66);
+  cursor: pointer;
+  transition: 500ms;
+}
+.footer .footer-content .footer-contacts-section-main .footer-information-section .footer-information-section-second-link:hover {
+  color: rgb(0, 98, 255);
+}
+.footer .footer-content .footer-contacts-section-main .footer-contacts-section {
+  width: 350px;
+}
+.footer .footer-content .footer-contacts-section-main .footer-contacts-section .footer-contacts-section-title {
+  font-size: 22px;
+  padding-top: 20px;
+  color: #151515;
+}
+.footer .footer-content .footer-contacts-section-main .footer-contacts-section .footer-message-box {
+  cursor: pointer;
+  background-color: #eaf0fd;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer .footer-content .footer-contacts-section-main .footer-contacts-section .footer-message-box .footer-message-icon {
+  margin-left: 20px;
+  font-size: 20px;
+}
+.footer .footer-content .footer-contacts-section-main .footer-contacts-section .footer-message-box .footer-message-box-title {
+  font-size: 18px;
+  color: #151515;
+}
+.footer .footer-content .footer-contacts-section-main .footer-contacts-section .footer-email-box {
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: #eaf0fd;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer .footer-content .footer-contacts-section-main .footer-contacts-section .footer-email-box .footer-email-icon {
+  margin-left: 20px;
+  font-size: 20px;
+}
+.footer .footer-content .footer-contacts-section-main .footer-contacts-section .footer-email-box .footer-email-box-title {
+  font-size: 18px;
+  color: #151515;
+}
+.footer .footer-content .footer-contacts-section-main .footer-contacts-section .footer-phone-box {
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: #eaf0fd;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer .footer-content .footer-contacts-section-main .footer-contacts-section .footer-phone-box .footer-phone-icon {
+  margin-left: 20px;
+  font-size: 20px;
+}
+.footer .footer-content .footer-contacts-section-main .footer-contacts-section .footer-phone-box .footer-phone-box-title {
+  font-size: 18px;
+  color: #151515;
+}
+.footer .footer-content .footer-email-section {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: solid 1px #bdbdbd;
+  padding-bottom: 30px;
+}
+.footer .footer-content .footer-email-section .footer-email-left-side {
+  display: flex;
+}
+.footer .footer-content .footer-email-section .footer-email-left-side .footer-email-section-box {
+  background-color: rgb(0, 98, 255);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 22px;
+}
+.footer .footer-content .footer-email-section .footer-email-left-side .footer-email-section-title {
+  font-size: 1rem;
+  color: #151515;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.footer .footer-content .footer-email-section .footer-email-right-side {
+  display: flex;
+  align-items: center;
+}
+.footer .footer-content .footer-email-section .footer-email-right-side .footer-email-input {
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+  width: 250px;
+  height: 60px;
+  font-size: 1.125rem;
+  padding-left: 1rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+.footer .footer-content .footer-email-section .footer-email-right-side .footer-email-input:focus {
+  border-bottom-color: blue;
+}
+.footer .footer-content .footer-email-section .footer-email-right-side .footer-email-button {
+  margin-left: 1.5rem;
+  background-color: rgba(78, 78, 78, 0.5215686275);
+  width: 160px;
+  height: 50px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 1rem;
+  border: solid 1px rgba(78, 78, 78, 0.5215686275);
+}
+.footer .footer-content .footer-email-section .footer-email-right-side .footer-email-button:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+.footer .footer-content .footer-email-section #success-cube {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 380px;
+  gap: 20px;
+  height: 60px;
+  background-color: rgb(78, 255, 78);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.footer .footer-content .footer-email-section #success-cube.show {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.footer .footer-content .footer-email-section #success-cube.hide {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.footer .footer-content .footer-bottom-section {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  margin-top: 20px;
+}
+.footer .footer-content .footer-bottom-section .footer-bottom-section-title {
+  margin-left: 30px;
+  color: #3e3e3e;
+  font-size: 16px;
+}
+.footer .footer-content .footer-bottom-section .footer-social-media-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-left: 500px;
+  height: 60px;
+  width: 200px;
+}
+.footer .footer-content .footer-bottom-section .footer-social-media-box .footer-youtube-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #3e3e3e;
+  border: solid 2px #838383;
+  font-size: 20px;
+  transition: 500ms;
+}
+.footer .footer-content .footer-bottom-section .footer-social-media-box .footer-youtube-box:hover {
+  color: red;
+}
+.footer .footer-content .footer-bottom-section .footer-social-media-box .footer-facebook-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: solid 2px #838383;
+  color: #3e3e3e;
+  font-size: 20px;
+  transition: 500ms;
+}
+.footer .footer-content .footer-bottom-section .footer-social-media-box .footer-facebook-box:hover {
+  color: rgb(0, 98, 255);
+}
+.footer .footer-content .footer-bottom-section .footer-social-media-box .footer-linkdIn-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid 2px #838383;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #3e3e3e;
+  font-size: 20px;
+  transition: 500ms;
+}
+.footer .footer-content .footer-bottom-section .footer-social-media-box .footer-linkdIn-box:hover {
+  color: rgb(0, 98, 255);
 }/*# sourceMappingURL=style.css.map */
