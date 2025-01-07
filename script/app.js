@@ -812,3 +812,15 @@ document.addEventListener("DOMContentLoaded", function () {
   } 
 });
 /// FOOTER INPUT AND BUTTON  /// FOOTER INPUT AND BUTTON  /// FOOTER INPUT AND BUTTON  /// FOOTER INPUT AND BUTTON
+let githubImage = document.querySelector('.github-image');
+let showImageButton = document.querySelector('#showImageButton');
+let flyLogo = document.querySelector('.fly-logo');
+flyLogo.addEventListener('click', () => {
+  showImageButton.style.display = 'block'; 
+});
+
+showImageButton.addEventListener('click', () => {
+  githubImage.style.display = 'block';
+  showImageButton.style.display = 'none';
+});
+

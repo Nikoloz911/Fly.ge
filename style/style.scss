@@ -1667,6 +1667,9 @@ body{
         align-items: center;
         height: 70px;
         margin-top: 20px;
+        .fly-logo{
+            cursor: pointer;
+        }
         .footer-bottom-section-title{
             margin-left: 30px;
             color: #3e3e3e;
@@ -1731,4 +1734,37 @@ body{
                 }
     }
 }
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .github-button{
+        display: none;
+        background-color: rgb(0, 177, 0);
+        border: solid 1px rgb(0, 177, 0);
+        border-radius: 5px;
+        color: #fff;
+        font-size: 18px;
+        width: 200px;
+        height: 50px;
+        transition: 500ms;
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(108, 197, 0);
+        }
+    }
+}
+.image-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .github-image{
+        display: none;
+        width: 500px;
+        height: 400px;
+        margin: 50px;
+    }
 }
