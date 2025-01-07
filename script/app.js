@@ -63,9 +63,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let modalRegistrationText = document.querySelector(".modal-registration-container-text");
     let modalAuthButton = document.querySelector(".modal-button");
     let dropdownItems = [
-      { flag: "./images/Flags/Language-ge-logo.svg", text: "ქარ", lang: "ge" },
-      { flag: "./images/Flags/us.svg", text: "eng", lang: "en" },
-      { flag: "./images/Flags/ru.svg", text: "Pyc", lang: "ru" },
+      { flag: "../images/Flags/Language-ge-logo.svg", text: "ქარ", lang: "ge" },
+      { flag: "../images/Flags/us.svg", text: "eng", lang: "en" },
+      { flag: "../images/Flags/ru.svg", text: "Pyc", lang: "ru" },
     ];
     dropdownContainer.classList.add("nav-bar-language-dropdown");
     document.body.appendChild(dropdownContainer);
@@ -146,6 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     /// LANGUAGE UPDATE /// LANGUAGE UPDATE /// LANGUAGE UPDATE /// LANGUAGE UPDATE /// LANGUAGE UPDATE
     function updateNavBarText(lang) {
+      document.querySelector(".nav-bar-link li").textContent = translations[lang].aviabiltebi;
       document.querySelector(".nav-bar-link-main li").textContent = translations[lang].aviabiltebi;
       document.querySelector(".nav-bar-link:nth-child(2) li").textContent = translations[lang].blog;
       document.querySelector(".nav-bar-link:nth-child(3) li").textContent = translations[lang].aboutUs;
