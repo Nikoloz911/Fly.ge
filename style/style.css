@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: sans-serif;
+  font-weight: bold;
 }
 
 .nav-bar {
@@ -1354,8 +1355,65 @@ body {
 }
 .home-page .home-page-description-section {
   height: 600px;
-  border: solid 5px purple;
-  display: none;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+}
+.home-page .home-page-description-section .home-page-description-section-left-side {
+  width: 55%;
+}
+.home-page .home-page-description-section .home-page-description-section-left-side .blue-image-container {
+  background-color: rgb(43, 124, 255);
+  border-radius: 5px;
+  width: 100%;
+}
+.home-page .home-page-description-section .home-page-description-section-left-side .blue-image-container .description-image {
+  margin-left: 250px;
+  scale: 120%;
+}
+.home-page .home-page-description-section .home-page-description-section-right-side {
+  width: 45%;
+}
+.home-page .home-page-description-section .home-page-description-section-right-side .home-page-description-section-right-side-title {
+  font-size: 25px;
+  margin-left: 50px;
+}
+.home-page .home-page-description-section .home-page-description-section-right-side .description-first {
+  width: 570px;
+  margin-left: 50px;
+  font-size: 15px;
+  margin-top: 25px;
+}
+.home-page .home-page-description-section .home-page-description-section-right-side .description-second {
+  width: 570px;
+  margin-left: 50px;
+  font-size: 15px;
+  margin-top: 25px;
+}
+.home-page .home-page-description-section .home-page-description-section-right-side .description-third {
+  width: 570px;
+  margin-left: 50px;
+  font-size: 15px;
+  margin-top: 25px;
+}
+.home-page .home-page-description-section .home-page-description-section-right-side .description-fourth {
+  width: 570px;
+  margin-left: 50px;
+  font-size: 15px;
+  margin-top: 25px;
+}
+.home-page .home-page-description-section .home-page-description-section-right-side .description-fifth {
+  width: 570px;
+  margin-left: 50px;
+  font-size: 15px;
+  margin-top: 25px;
+}
+.home-page .home-page-description-section .home-page-description-section-right-side .description-sixth {
+  width: 570px;
+  margin-left: 50px;
+  font-size: 15px;
+  margin-top: 25px;
 }
 .home-page .result-container {
   background-color: #ddd;

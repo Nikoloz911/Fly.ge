@@ -664,12 +664,15 @@ toInput.addEventListener("click", function () {
 
 /// FETCH DATA /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA 
 /// FETCH DATA /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA 
+/// FETCH DATA /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA 
+/// FETCH DATA /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA 
 fetch('AirpotsList.json')
   .then(response => response.json())
   .then(data => {
     populateDropdowns(data);
   })
   .catch(error => console.error('Error fetching airports data:', error));
+
 function populateDropdowns(data) {
   let fromDropdown = document.querySelector('.ticket-city-from-dropdown');
   let toDropdown = document.querySelector('.ticket-city-to-dropdown');
@@ -679,22 +682,45 @@ function populateDropdowns(data) {
   toDropdown.innerHTML = '';
   data.forEach(airport => {
     let fromDropdownOption = createDropdownOption(airport, 'from');
+    let toDropdownOption = createDropdownOption(airport, 'to');
     fromDropdown.appendChild(fromDropdownOption);
-    
+    toDropdown.appendChild(toDropdownOption);
     fromDropdownOption.addEventListener('click', () => {
       fromInputField.value = `${airport.ICAO_Code} - ${airport.Airport_Name} (${airport.City})`;
-      fromDropdown.style.display = 'none';  
+      fromDropdown.style.display = 'none';
     });
-  });
-  data.forEach(airport => {
-    let toDropdownOption = createDropdownOption(airport, 'to');
-    toDropdown.appendChild(toDropdownOption);
-    
     toDropdownOption.addEventListener('click', () => {
       toInputField.value = `${airport.ICAO_Code} - ${airport.Airport_Name} (${airport.City})`;
-      toDropdown.style.display = 'none';  
+      toDropdown.style.display = 'none';
     });
   });
+  fromInputField.addEventListener('input', () => {
+    filterDropdownOptions(fromInputField, fromDropdown, data, 'from');
+  });
+  toInputField.addEventListener('input', () => {
+    filterDropdownOptions(toInputField, toDropdown, data, 'to');
+  });
+}
+function filterDropdownOptions(inputField, dropdown, data, type) {
+  let searchTerm = inputField.value.toLowerCase();
+  let filteredData = data.filter(airport => {
+    let airportName = `${airport.City} (${airport.ICAO_Code}), ${airport.Airport_Name}`;
+    return airportName.toLowerCase().includes(searchTerm);
+  });
+  dropdown.innerHTML = '';
+  filteredData.forEach(airport => {
+    let dropdownOption = createDropdownOption(airport, type);
+    dropdown.appendChild(dropdownOption);
+    dropdownOption.addEventListener('click', () => {
+      if (type === 'from') {
+        inputField.value = `${airport.ICAO_Code} - ${airport.Airport_Name} (${airport.City})`;
+      } else {
+        inputField.value = `${airport.ICAO_Code} - ${airport.Airport_Name} (${airport.City})`;
+      }
+      dropdown.style.display = 'none'; 
+    });
+  });
+  dropdown.style.display = filteredData.length > 0 ? 'block' : 'none';
 }
 function createDropdownOption(airport, type) {
   let dropdownOption = document.createElement('div');
@@ -709,18 +735,11 @@ function createDropdownOption(airport, type) {
   }
   icon.innerHTML = iconHtml;
   let name = document.createElement('h4');
-  name.textContent = `${airport.City} (${airport.ICAO_Code}),  ${airport.Airport_Name} `;
+  name.textContent = `${airport.City} (${airport.ICAO_Code}), ${airport.Airport_Name}`;
   dropdownOption.appendChild(icon);
   dropdownOption.appendChild(name);
   return dropdownOption;
 }
-/// FETCH DATA /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA 
-/// FETCH DATA /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA 
-
-
-
-
-
 document.getElementById('searchButton').addEventListener('click', function() {
   let fromCityInput = document.getElementById('ticket-city-from-input').value.trim();
   let toCityInput = document.getElementById('ticket-city-to-input').value.trim();
@@ -764,11 +783,10 @@ document.getElementById('searchButton').addEventListener('click', function() {
           }
       })
 });
-
-
-
-
-
+/// FETCH DATA /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA 
+/// FETCH DATA /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA 
+/// FETCH DATA /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA 
+/// FETCH DATA /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA  /// FETCH DATA 
 
 
 /// FOOTER INPUT AND BUTTON  /// FOOTER INPUT AND BUTTON  /// FOOTER INPUT AND BUTTON  /// FOOTER INPUT AND BUTTON
@@ -812,6 +830,7 @@ document.addEventListener("DOMContentLoaded", function () {
   } 
 });
 /// FOOTER INPUT AND BUTTON  /// FOOTER INPUT AND BUTTON  /// FOOTER INPUT AND BUTTON  /// FOOTER INPUT AND BUTTON
+/// HIDDEN IMAGE /// HIDDEN IMAGE /// HIDDEN IMAGE /// HIDDEN IMAGE /// HIDDEN IMAGE /// HIDDEN IMAGE
 let githubImage = document.querySelector('.github-image');
 let showImageButton = document.querySelector('#showImageButton');
 let flyLogo = document.querySelector('.fly-logo');
@@ -823,4 +842,4 @@ showImageButton.addEventListener('click', () => {
   githubImage.style.display = 'block';
   showImageButton.style.display = 'none';
 });
-
+/// HIDDEN IMAGE /// HIDDEN IMAGE /// HIDDEN IMAGE /// HIDDEN IMAGE /// HIDDEN IMAGE /// HIDDEN IMAGE

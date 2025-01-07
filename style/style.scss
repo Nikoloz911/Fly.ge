@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: sans-serif;
+    font-weight: bold;
 }
 .nav-bar{
     width: 100%;
@@ -1399,8 +1400,61 @@ body{
     }
     .home-page-description-section{
         height: 600px;
-    border: solid 5px purple;
-    display: none;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+        .home-page-description-section-left-side{
+            width: 55%;
+            .blue-image-container{
+                background-color: rgb(43, 124, 255);
+                border-radius: 5px;
+                width: 100%;
+                .description-image{
+                    margin-left: 250px;
+                    scale: 120%;
+                }
+            }
+        }
+        .home-page-description-section-right-side{
+            width: 45%;
+            .home-page-description-section-right-side-title{
+                font-size: 25px;
+                margin-left: 50px;
+            }
+            @mixin description-styles{
+                width: 570px;
+                margin-left: 50px;
+                font-size: 15px;
+                margin-top: 25px;
+            }
+                .description-first{
+                  
+                    @include description-styles();
+                   
+                }
+                .description-second{
+                    @include description-styles();
+
+                }
+                .description-third{
+                    @include description-styles();
+
+                }
+                .description-fourth{
+                    @include description-styles();
+
+                }
+                .description-fifth{
+                    @include description-styles();
+
+                }
+                .description-sixth{
+                    @include description-styles();
+
+                }
+            
+        }
     }
     .result-container{
         background-color: #ddd;
