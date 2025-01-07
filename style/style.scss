@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: sans-serif;
+    font-weight: bold;
 }
 .nav-bar{
     width: 100%;
@@ -118,7 +119,7 @@ body{
     background-color: rgba(118, 118, 118, 0.7); 
     justify-content: center;
     align-items: center;
-    z-index: 1000;      ///
+    z-index: 9000;      ///
   }
   .modal-content {
     width: 500px;
@@ -335,7 +336,7 @@ body{
     align-items: center;
     font-size: 16px;
    padding: 10px;
-   z-index: 2000;       ///
+   z-index: 20000;       ///
     .error-message {
         display: flex;
         align-items: center;
@@ -429,7 +430,7 @@ body{
                     position: relative; 
                     cursor: pointer;
                     transition: 500ms;
-                    z-index: 9999;      ///
+                    z-index: 999;      ///
                     .ticket-dropdowns-container-1-box-repeat-icon {
                         color: rgb(0, 98, 255);
                         font-size: 22px;
@@ -510,7 +511,7 @@ body{
                     position: relative; 
                     transition: 500ms;
                     cursor: pointer;
-                    z-index: 9999;              ///
+                    z-index: 999;              ///
                     .ticket-dropdowns-container-1-box-repeat-icon {
                         color: rgb(0, 98, 255);
                         font-size: 22px;
@@ -1399,8 +1400,61 @@ body{
     }
     .home-page-description-section{
         height: 600px;
-    border: solid 5px purple;
-    display: none;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+        .home-page-description-section-left-side{
+            width: 55%;
+            .blue-image-container{
+                background-color: rgb(43, 124, 255);
+                border-radius: 5px;
+                width: 100%;
+                .description-image{
+                    margin-left: 250px;
+                    scale: 120%;
+                }
+            }
+        }
+        .home-page-description-section-right-side{
+            width: 45%;
+            .home-page-description-section-right-side-title{
+                font-size: 25px;
+                margin-left: 50px;
+            }
+            @mixin description-styles{
+                width: 570px;
+                margin-left: 50px;
+                font-size: 15px;
+                margin-top: 25px;
+            }
+                .description-first{
+                  
+                    @include description-styles();
+                   
+                }
+                .description-second{
+                    @include description-styles();
+
+                }
+                .description-third{
+                    @include description-styles();
+
+                }
+                .description-fourth{
+                    @include description-styles();
+
+                }
+                .description-fifth{
+                    @include description-styles();
+
+                }
+                .description-sixth{
+                    @include description-styles();
+
+                }
+            
+        }
     }
     .result-container{
         background-color: #ddd;
@@ -1667,6 +1721,9 @@ body{
         align-items: center;
         height: 70px;
         margin-top: 20px;
+        .fly-logo{
+            cursor: pointer;
+        }
         .footer-bottom-section-title{
             margin-left: 30px;
             color: #3e3e3e;
@@ -1731,4 +1788,37 @@ body{
                 }
     }
 }
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .github-button{
+        display: none;
+        background-color: rgb(0, 177, 0);
+        border: solid 1px rgb(0, 177, 0);
+        border-radius: 5px;
+        color: #fff;
+        font-size: 18px;
+        width: 200px;
+        height: 50px;
+        transition: 500ms;
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(108, 197, 0);
+        }
+    }
+}
+.image-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .github-image{
+        display: none;
+        width: 500px;
+        height: 400px;
+        margin: 50px;
+    }
 }
