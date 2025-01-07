@@ -111,7 +111,7 @@ body {
   background-color: rgba(118, 118, 118, 0.7);
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 9000;
 }
 
 .modal-content {
@@ -334,7 +334,7 @@ body {
   align-items: center;
   font-size: 16px;
   padding: 10px;
-  z-index: 2000;
+  z-index: 20000;
 }
 .error-container .error-message {
   display: flex;
@@ -424,7 +424,7 @@ body {
   position: relative;
   cursor: pointer;
   transition: 500ms;
-  z-index: 9999;
+  z-index: 999;
 }
 .home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-1-box .ticket-dropdowns-container-1-box-repeat-icon {
   color: rgb(0, 98, 255);
@@ -499,7 +499,7 @@ body {
   position: relative;
   transition: 500ms;
   cursor: pointer;
-  z-index: 9999;
+  z-index: 999;
 }
 .home-page .home-page-ticket-section .ticket-search-container .ticket-dropdowns-container .ticket-dropdowns-container-2-box .ticket-dropdowns-container-1-box-repeat-icon {
   color: rgb(0, 98, 255);
