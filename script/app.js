@@ -17,7 +17,55 @@ document.addEventListener("DOMContentLoaded", () => {
             "modalRegistrationQuestion": "არ გაქვს ანგარიში?",
             "modalRegistrationText": "რეგისტრაცია",
             "modalAuthButton": "ავტორიზაცია",
-            "closeErrorButton": "დახურვა"
+            "closeErrorButton": "დახურვა",
+            "homePageTitle": "წინ კიდევ ბევრი აღმოჩენაა",
+            "ticketSearcherTitle": "ავიაბილეთები",
+            "roundTrip": "ორივე გზა",
+            "oneWay": "ცალმხრივი",
+            "multiCity": "რამდენიმე მარშუტი",
+            "passenger": "მგზავრი",
+            "adult": "ზრდასრული",
+            "adultAge": "11 წლიდან",
+            "child": "ბავშვები",
+            "childAge": "2-11 წლის",
+            "infant": "ჩვილი",
+            "infantAge": "2 წლამდე",
+            "delete": "წაშლა",
+            "confirm": "დასტური",
+            "economyClass": "ეკონომ კლასი",
+            "premiumEconomyClass": "პერმიუმ ეკონომი",
+            "businessClass": "ბიზნეს კლასი",
+            "firstClass": "პირველი კლასი",
+            "dropdownTitle": "დაზოგე ფული, შეინარჩუნე კომფორტი",
+            "mixedClassSearch": "შერეული კლასით ძებნა",
+            "mixedClassSearch": "თუ შერეულ კლასებს აირჩევთ, ჩვენ გაჩვენებთ საუკეთესო კომბინაციებს კომფორტული, მაგრამ ხელმისაწვდომი მოგზაურობისთვის.",
+            "cityOrAirportFrom": "ქალაქი, აეროპორტი",
+            "cityOrAirportTo": "ქალაქი, აეროპორტი",
+            "whereTo": "სად",
+            "departureDate": "გამგზავრება",
+            "returnDate": "დაბრუნება",
+            "searchTicket": "ბილეთის ძებნა",
+            "aviabiltebi2": "ავიაბილეთები",
+    "company": "კომპანია",
+    "blog": "ბლოგი",
+    "aboutUs": "ჩვენს შესახებ",
+    "information": "ინფორმაცია",
+    "privacyPolicy": "კონფიდენციალურობის პოლიტიკა",
+    "termsAndConditions": "წესები და პირობები",
+    "contact": "კონტაქტი",
+    "writeUs": "მოგვწერეთ",
+    "emailSubscription": "შეიყვანეთ თქვენი ელ.ფოსტა და მიიღეთ ექსკლუზიური შეთავაზებები",
+    "subscribe": "გამოწერა",
+    "successMessage": "თქვენ წარმატებით გამოიწერეთ ✔",
+    "footerRights": "ყველა უფლება დაცულია fly.ge",
+    "showCoolImage": "მაგარი სურათი",
+    "discoverAdventures": "აღმოაჩინე თავგადასავლები",
+    "helpCreateAdventures": "შენს ცხოვრებაში, მრავალფეროვანი თავგადასავლების შექმნაში დახმარება და ძიების და გადაწყვეტილების პროცესის გამარტივება ჩვენი სუპერმისიაა.",
+    "travelBlogDescription": "თუ მოგზაურობა შენი სტიქიაა, ხშირად გიწევს სხვადასხვა ქვეყანაში ვიზიტი ან თუ ეძებ, განსაკუთრებულ მომენტებს, ადგილებს, რომელთა აღმოჩენა და პერსონალურ რუკაზე მონიშვნა, შენს ცხოვრებაში დაუვიწყარ კადრებად და მოგონებებად ჩაიბეჭდება, გაეცანი ჩვენს ბლოგს – აღმოაჩინე და მოინიშნე ახალი ლოკაცია სამოგზაურო რუკაზე, გაეცანი მსოფლიო ხალხთა კულტურას და შეარჩიე შენთვის ყველაზე საინტერესო.",
+    "budgetOptimization": "ბიუჯეტის ოპტიმიზაცია მნიშვნელოვანია? დაათვალიერე შენზე მორგებული შეთავაზებები – იქნებ, სასურველ ლოკაციაზე, განსაკუთრებული ფასები გვაქვს?",
+    "scheduleAndBook": "გაეცანი განრიგს, შეარჩიე და დაჯავშნე მარტივად ავიაბილეთი, სასტუმრო, ონლაინ, ერთ სივრცესა და უმოკლეს ვადაში.",
+    "shareExperience": "გაგვიზიარე შენი მოგზაურობით მიღებული ბედნიერება და შთაბეჭდილებები სოციალურ არხებში Facebook, Instagram, Linkedin.",
+    "flyGeDiscovery": "წინ კიდევ ბევრი აღმოჩენაა Fly.ge"
         },
         en: {
             "aviabiltebi": "Flights",
@@ -33,7 +81,55 @@ document.addEventListener("DOMContentLoaded", () => {
             "modalRegistrationQuestion": "Don't have an account?",
             "modalRegistrationText": "Sign Up",
             "modalAuthButton": "Authorize",
-            "closeErrorButton": "Close"
+            "closeErrorButton": "Close",
+            "homePageTitle": "There are many more discoveries ahead",
+            "ticketSearcherTitle": "Flights",
+            "roundTrip": "Round Trip",
+            "oneWay": "One Way",
+            "multiCity": "Multi-City",
+            "passenger": "Passenger",
+            "adult": "Adult",
+            "adultAge": "From 11 years old",
+            "child": "Children",
+            "childAge": "2-11 years old",
+            "infant": "Infant",
+            "infantAge": "Under 2 years old",
+            "delete": "Delete",
+            "confirm": "Confirm",
+            "economyClass": "Economy Class",
+            "premiumEconomyClass": "Premium Economy",
+            "businessClass": "Business Class",
+            "firstClass": "First Class",
+            "dropdownTitle": "Save money, keep comfort",
+            "mixedClassSearch": "Search with mixed classes",
+            "mixedClassSearch": "Search with mixed classes",
+            "cityOrAirportFrom": "City, Airport",
+            "cityOrAirportTo": "City, Airport",
+            "whereTo": "Where to?",
+            "departureDate": "Departure",
+            "returnDate": "Return",
+            "searchTicket": "Search Tickets",
+          "discoverAdventures": "Discover Adventures",
+    "helpCreateAdventures": "Helping you create diverse adventures in your life and simplifying the process of search and decision-making is our super mission.",
+    "travelBlogDescription": "If traveling is your passion, often visiting different countries or looking for special moments and places that you want to mark on your personal map, this will be captured as unforgettable scenes and memories in your life. Explore our blog – discover and mark new locations on your travel map, explore the culture of the world's people, and choose the most interesting ones for you.",
+    "budgetOptimization": "Is budget optimization important? Check out offers tailored to you – maybe we have special prices for your desired location?",
+    "scheduleAndBook": "Explore the schedule, select, and easily book your flight, hotel, or online in one place in the shortest time possible.",
+    "shareExperience": "Share your travel happiness and impressions on social channels Facebook, Instagram, Linkedin.",
+    "flyGeDiscovery": "Many more discoveries ahead Fly.ge",
+            "aviabiltebi2": "Air Tickets",
+            "company": "Company",
+            "blog": "Blog",
+            "aboutUs": "About Us",
+            "information": "Information",
+            "privacyPolicy": "Privacy Policy",
+            "termsAndConditions": "Terms and Conditions",
+            "contact": "Contact",
+            "writeUs": "Write to us",
+            "emailSubscription": "Enter your email and get exclusive offers",
+            "subscribe": "Subscribe",
+            "successMessage": "You have successfully subscribed ✔",
+            "footerRights": "All rights reserved fly.ge",
+            "showCoolImage": "Show Cool Image"
         },
         ru: {
             "aviabiltebi": "Авиабилеты",
@@ -49,7 +145,55 @@ document.addEventListener("DOMContentLoaded", () => {
             "modalRegistrationQuestion": "Нет аккаунта?",
             "modalRegistrationText": "Регистрация",
             "modalAuthButton": "Авторизоваться",
-            "closeErrorButton": "Закрыть"
+            "closeErrorButton": "Закрыть",
+            "homePageTitle": "Впереди еще много открытий",
+            "ticketSearcherTitle": "Авиабилеты",
+            "roundTrip": "Туда и обратно",
+            "oneWay": "В одну сторону",
+            "multiCity": "Несколько маршрутов",
+            "passenger": "Пассажир",
+            "adult": "Взрослый",
+            "adultAge": "От 11 лет",
+            "child": "Дети",
+            "childAge": "2-11 лет",
+            "infant": "Младенец",
+            "infantAge": "До 2 лет",
+            "delete": "Удалить",
+            "confirm": "Подтвердить",
+            "economyClass": "Эконом класс",
+            "premiumEconomyClass": "Премиум эконом",
+            "businessClass": "Бизнес класс",
+            "firstClass": "Первый класс",
+            "dropdownTitle": "Экономь деньги, сохраняй комфорт",
+            "mixedClassSearch": "Поиск с разными классами",
+            "mixedClassSearch": "Поиск с комбинированными классами",
+    "cityOrAirportFrom": "Город, аэропорт",
+    "cityOrAirportTo": "Город, аэропорт",
+    "whereTo": "Куда?",
+    "departureDate": "Отправление",
+    "returnDate": "Возвращение",
+    "searchTicket": "Искать билеты",
+    "discoverAdventures": "Откройте приключения",
+    "helpCreateAdventures": "Помощь в создании разнообразных приключений в вашей жизни и упрощение процесса поиска и принятия решений – наша супер миссия.",
+    "travelBlogDescription": "Если путешествия — ваша стихия, вам часто приходится посещать разные страны или искать особенные моменты и места, которые вы хотите отметить на своей персональной карте, это останется незабываемыми кадрами и воспоминаниями в вашей жизни. Ознакомьтесь с нашим блогом – откройте и отметьте новые локации на вашей туристической карте, познакомьтесь с культурой народов мира и выберите самые интересные для вас.",
+    "budgetOptimization": "Важна оптимизация бюджета? Ознакомьтесь с предложениями, подобранными специально для вас – возможно, у нас есть специальные цены для вашего желаемого местоположения?",
+    "scheduleAndBook": "Ознакомьтесь с расписанием, выберите и легко забронируйте авиабилет, отель, онлайн в одном месте за кратчайшее время.",
+    "shareExperience": "Поделитесь счастьем и впечатлениями от путешествий в социальных сетях Facebook, Instagram, Linkedin.",
+    "flyGeDiscovery": "Впереди много открытий Fly.ge",
+    "aviabiltebi2": "Авиабилеты",
+    "company": "Компания",
+    "blog": "Блог",
+    "aboutUs": "О нас",
+    "information": "Информация",
+    "privacyPolicy": "Политика конфиденциальности",
+    "termsAndConditions": "Условия и положения",
+    "contact": "Контакты",
+    "writeUs": "Напишите нам",
+    "emailSubscription": "Введите ваш email и получите эксклюзивные предложения",
+    "subscribe": "Подписаться",
+    "successMessage": "Вы успешно подписались ✔",
+    "footerRights": "Все права защищены fly.ge",
+    "showCoolImage": "Показать крутое изображение"
         }
     };
     let languageButton = document.querySelector(".nav-bar-language-button");
@@ -63,9 +207,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let modalRegistrationText = document.querySelector(".modal-registration-container-text");
     let modalAuthButton = document.querySelector(".modal-button");
     let dropdownItems = [
-      { flag: "./images/Flags/Language-ge-logo.svg", text: "ქარ", lang: "ge" },
-      { flag: "./images/Flags/us.svg", text: "eng", lang: "en" },
-      { flag: "./images/Flags/ru.svg", text: "Pyc", lang: "ru" },
+      { flag: "../images/Flags/Language-ge-logo.svg", text: "ქარ", lang: "ge" },
+      { flag: "../images/Flags/us.svg", text: "eng", lang: "en" },
+      { flag: "../images/Flags/ru.svg", text: "Pyc", lang: "ru" },
     ];
     dropdownContainer.classList.add("nav-bar-language-dropdown");
     document.body.appendChild(dropdownContainer);
@@ -146,11 +290,69 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     /// LANGUAGE UPDATE /// LANGUAGE UPDATE /// LANGUAGE UPDATE /// LANGUAGE UPDATE /// LANGUAGE UPDATE
     function updateNavBarText(lang) {
+      document.querySelector(".nav-bar-link li").textContent = translations[lang].aviabiltebi;
       document.querySelector(".nav-bar-link-main li").textContent = translations[lang].aviabiltebi;
       document.querySelector(".nav-bar-link:nth-child(2) li").textContent = translations[lang].blog;
       document.querySelector(".nav-bar-link:nth-child(3) li").textContent = translations[lang].aboutUs;
       document.querySelector(".nav-bar-log-in-button").textContent = translations[lang].login;
       languageButton.querySelector("p").textContent = translations[lang].language;
+      document.querySelector(".home-page-ticket-section-title").textContent = translations[lang].homePageTitle;
+document.querySelector(".ticket-searcher-title-container-title").textContent = translations[lang].ticketSearcherTitle;
+document.querySelector(".ticket-dropdowns-container-1-box-text").textContent = translations[lang].roundTrip;
+document.querySelectorAll(".dropdown-content-text")[0].textContent = translations[lang].roundTrip;
+document.querySelectorAll(".dropdown-content-text")[1].textContent = translations[lang].oneWay;
+document.querySelectorAll(".dropdown-content-text")[2].textContent = translations[lang].multiCity;
+document.querySelectorAll(".ticket-dropdowns-container-1-box-text")[1].textContent = translations[lang].passenger;
+document.querySelectorAll(".dropdown-people-section-1-container-title-side-description-container-text-1")[0].textContent = translations[lang].adult;
+document.querySelectorAll(".dropdown-people-section-1-container-title-side-description-container-text-2")[0].textContent = translations[lang].adultAge;
+document.querySelectorAll(".dropdown-people-section-1-container-title-side-description-container-text-1")[1].textContent = translations[lang].child;
+document.querySelectorAll(".dropdown-people-section-1-container-title-side-description-container-text-2")[1].textContent = translations[lang].childAge;
+document.querySelectorAll(".dropdown-people-section-1-container-title-side-description-container-text-1")[2].textContent = translations[lang].infant;
+document.querySelectorAll(".dropdown-people-section-1-container-title-side-description-container-text-2")[2].textContent = translations[lang].infantAge;
+document.getElementById("delete-button-1").textContent = translations[lang].delete;
+document.getElementById("confirm-button-1").textContent = translations[lang].confirm;
+document.querySelectorAll(".ticket-dropdowns-container-1-box-text")[2].textContent = translations[lang].economyClass;
+document.getElementById("label-checkbox-1").textContent = translations[lang].economyClass;
+document.getElementById("label-checkbox-2").textContent = translations[lang].premiumEconomyClass;
+document.getElementById("label-checkbox-3").textContent = translations[lang].businessClass;
+document.getElementById("label-checkbox-4").textContent = translations[lang].firstClass;
+document.querySelector(".dropdown3-content-title").textContent = translations[lang].dropdownTitle;
+document.querySelector(".some").textContent = translations[lang].mixedClassSearch;
+document.querySelector(".some1").textContent = translations[lang].mixedClassSearch;
+document.querySelector(".ticket-city-and-date-first-input-title").textContent = translations[lang].cityOrAirportFrom;
+document.querySelector(".ticket-city-and-date-second-input-title").textContent = translations[lang].cityOrAirportTo;
+document.querySelector("#ticket-city-to-input").setAttribute("placeholder", translations[lang].whereTo);
+document.querySelector(".datetime-first-title").textContent = translations[lang].departureDate;
+document.querySelector(".datetime-second-title").textContent = translations[lang].returnDate;
+document.querySelector(".search-button-text").textContent = translations[lang].searchTicket;
+// document.querySelector(".home-page-description-section-right-side-title").textContent = translations[lang].adventureTitle;
+// document.querySelector(".description-first").textContent = translations[lang].missionDescription;
+// document.querySelector(".description-second").textContent = translations[lang].travelBlogDescription;
+// document.querySelector(".description-third").textContent = translations[lang].budgetOptimization;
+// document.querySelector(".description-fourth").textContent = translations[lang].scheduleAndBook;
+// document.querySelector(".description-fifth").textContent = translations[lang].shareExperience;
+// document.querySelector(".description-sixth").textContent = translations[lang].flyGeDiscovery;
+document.querySelector(".home-page-description-section-right-side-title").textContent = translations[lang].discoverAdventures;
+document.querySelector(".description-first").textContent = translations[lang].helpCreateAdventures;
+document.querySelector(".description-second").textContent = translations[lang].travelBlogDescription;
+document.querySelector(".description-third").textContent = translations[lang].budgetOptimization;
+document.querySelector(".description-fourth").textContent = translations[lang].scheduleAndBook;
+document.querySelector(".description-fifth").textContent = translations[lang].shareExperience;
+document.querySelector(".description-sixth").textContent = translations[lang].flyGeDiscovery;
+document.querySelector(".footer-tickets-section-title").textContent = translations[lang].aviabiltebi;
+document.querySelector(".footer-company-section-title").textContent = translations[lang].company;
+document.querySelector(".footer-company-section-first-link").textContent = translations[lang].blog;
+document.querySelector(".footer-company-section-second-link").textContent = translations[lang].aboutUs;
+document.querySelector(".footer-information-section-title").textContent = translations[lang].information;
+document.querySelector(".footer-information-section-first-link").textContent = translations[lang].privacyPolicy;
+document.querySelector(".footer-information-section-second-link").textContent = translations[lang].termsAndConditions;
+document.querySelector(".footer-contacts-section-title").textContent = translations[lang].contact;
+document.querySelector(".footer-message-box-title").textContent = translations[lang].writeUs;
+document.querySelector(".footer-email-section-title").textContent = translations[lang].emailSubscription;
+document.querySelector(".footer-email-button").textContent = translations[lang].subscribe;
+document.getElementById("success-cube").textContent = translations[lang].successMessage;
+document.querySelector(".footer-bottom-section-title").textContent = translations[lang].footerRights;
+document.querySelector("#showImageButton").textContent = translations[lang].showCoolImage;
     }
     ///
     ///
